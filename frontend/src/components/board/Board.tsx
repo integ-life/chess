@@ -23,7 +23,7 @@ export default function Board({position,lastMove,moveColor,onMove,flipped}:Board
       <rect x={col*100} y={row*100} width="100" height="100" className={light?'board-square-light':'board-square-dark'} />
       {isLast&&<rect x={col*100} y={row*100} width="100" height="100" fill="#facc15" opacity=".42"/>}
       {selected===s&&<rect x={col*100+4} y={row*100+4} width="92" height="92" fill="none" stroke="var(--board-selection)" strokeWidth="8"/>}
-      {p&&<text x={col*100+50} y={row*100+55} textAnchor="middle" dominantBaseline="middle" fontSize="82" className={`chess-piece chess-piece--${p.color}`} stroke={s===checked?'#dc2626':'none'} strokeWidth="3">{GLYPH[p.color+p.type]}</text>}
+      {p&&<text x={col*100+50} y={row*100+55} textAnchor="middle" dominantBaseline="middle" fontSize="82" className={`chess-piece chess-piece--${p.color}`} stroke={s===checked?'#dc2626':undefined} strokeWidth="3">{GLYPH[p.color+p.type]}</text>}
       {isTarget&&<circle cx={col*100+50} cy={row*100+50} r={p?43:13} fill={p?'none':'var(--board-target)'} stroke={p?'var(--board-capture)':'none'} strokeWidth="6" opacity=".8"/>}
       {col===0&&<text x="5" y={row*100+15} fontSize="13" opacity=".65">{rankOf(s)+1}</text>}{row===7&&<text x={col*100+88} y="794" fontSize="13" opacity=".65">{String.fromCharCode(97+fileOf(s))}</text>}
     </g>}))}

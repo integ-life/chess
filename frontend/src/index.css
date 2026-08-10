@@ -375,18 +375,51 @@ html[data-board-theme='starlight'] {
   isolation: isolate;
 }
 
-.chess-board { border-radius: 1rem; overflow: hidden; background: #f0d9b5; box-shadow: 0 14px 36px rgb(61 39 20 / .22); }
+.chess-board {
+  --chess-piece-light: #fffdf5;
+  --chess-piece-light-stroke: rgb(55 32 18 / 0.58);
+  --chess-piece-dark: #202020;
+  --chess-piece-dark-stroke: rgb(255 253 245 / 0.24);
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #f0d9b5;
+  box-shadow: 0 14px 36px rgb(61 39 20 / .22);
+}
 .board-square-light { fill: #f0d9b5; }
 .board-square-dark { fill: #b58863; }
+.chess-board--rosewood {
+  --chess-piece-light: #ffe6ad;
+  --chess-piece-light-stroke: #6f1d1b;
+  --chess-piece-dark: #4b1113;
+  --chess-piece-dark-stroke: #f5c87a;
+}
 .chess-board--rosewood .board-square-light { fill: #e8c99b; }
 .chess-board--rosewood .board-square-dark { fill: #805438; }
+.chess-board--neon {
+  --chess-piece-light: #67e8f9;
+  --chess-piece-light-stroke: #083344;
+  --chess-piece-dark: #fb7185;
+  --chess-piece-dark-stroke: #4c0519;
+}
 .chess-board--neon .board-square-light { fill: #19334a; }
 .chess-board--neon .board-square-dark { fill: #081522; }
+.chess-board--starlight {
+  --chess-piece-light: #fff1ae;
+  --chess-piece-light-stroke: #713f12;
+  --chess-piece-dark: #c4b5fd;
+  --chess-piece-dark-stroke: #2e1065;
+}
 .chess-board--starlight .board-square-light { fill: #334155; }
 .chess-board--starlight .board-square-dark { fill: #111827; }
-.chess-piece { paint-order: stroke; font-family: "Arial Unicode MS", "Noto Sans Symbols 2", serif; }
-.chess-piece--r { fill: #fffdf5; stroke: rgb(0 0 0 / .16); }
-.chess-piece--b { fill: #202020; stroke: rgb(255 255 255 / .12); }
+.chess-piece {
+  paint-order: stroke fill;
+  font-family: "Arial Unicode MS", "Noto Sans Symbols 2", serif;
+  filter: drop-shadow(0 2px 1px rgb(0 0 0 / 0.28));
+}
+.chess-piece--r { color: var(--chess-piece-light); fill: var(--chess-piece-light); stroke: var(--chess-piece-light-stroke); }
+.chess-piece--b { color: var(--chess-piece-dark); fill: var(--chess-piece-dark); stroke: var(--chess-piece-dark-stroke); }
+.chess-board--neon .chess-piece { filter: drop-shadow(0 0 7px currentColor); }
+.chess-board--starlight .chess-piece { filter: drop-shadow(0 0 5px rgb(253 230 138 / 0.5)); }
 
 .board-grid-line {
   stroke: var(--board-grid);
