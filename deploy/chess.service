@@ -8,11 +8,11 @@ Type=simple
 User=chess
 Group=chess
 WorkingDirectory=/var/lib/chess
-Environment=PORT=8099
+Environment=PORT=8102
 Environment=DB_PATH=/var/lib/chess/app.db
 Environment=REQUEST_LOG_PATH=/var/lib/chess/request-response.log
 Environment=CHESS_ENGINE=stockfish
-Environment=CHESS_ENGINE_PATH=/opt/chess/engines/stockfish
+Environment=CHESS_ENGINE_PATH=/usr/games/stockfish
 Environment=CORS_ALLOWED_ORIGINS=https://chess.integ.life
 EnvironmentFile=-/etc/chess.env
 ExecStart=/usr/local/bin/chess-backend

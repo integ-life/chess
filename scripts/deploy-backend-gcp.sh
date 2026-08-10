@@ -26,9 +26,7 @@ gcloud compute scp --zone "$ZONE" --tunnel-through-iap \
   "$INSTANCE:/tmp/"
 
 gcloud compute ssh "$INSTANCE" --zone "$ZONE" --tunnel-through-iap --command='set -euo pipefail
-  test -x /opt/chess/engines/stockfish
-  sudo test -r /etc/caddy/origin-certs/chess-api.songyangyu.com.crt
-  sudo test -r /etc/caddy/origin-certs/chess-api.songyangyu.com.key
+  test -x /usr/games/stockfish
   sudo cp /usr/local/bin/chess-backend /usr/local/bin/chess-backend.previous
   sudo install -m 0755 /tmp/chess-backend /usr/local/bin/chess-backend
   sudo install -m 0644 /tmp/chess.service /etc/systemd/system/chess.service
@@ -37,7 +35,7 @@ gcloud compute ssh "$INSTANCE" --zone "$ZONE" --tunnel-through-iap --command='se
   sudo systemctl daemon-reload
   sudo systemctl restart chess
   sudo systemctl reload caddy
-  curl --fail --silent http://127.0.0.1:8099/api/health
+  curl --fail --silent http://127.0.0.1:8102/api/health
   echo'
 
 curl --fail --silent --show-error https://chess.integ.life/api/health

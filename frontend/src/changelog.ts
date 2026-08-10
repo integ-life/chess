@@ -15,6 +15,15 @@ export const appBuild = {
 
 export const changelog: ChangelogEntry[] = [
   {
+    version: '2026.08.10-login-routing-fix',
+    date: '2026-08-10',
+    title: '修复统一登录入口路由',
+    changes: [
+      'chess.integ.life 的 /api 请求现在由 Cloudflare Worker 转发到独立国际象棋后端，不再落入 GitHub Pages 404。',
+      '国际象棋后端使用独立 OAuth client、8102 端口与 chess-api.integ.life origin。',
+    ],
+  },
+  {
     version: '2026.08.10-international-chess-foundation',
     date: '2026-08-10',
     title: '国际象棋项目基线建立',

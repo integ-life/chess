@@ -1,4 +1,3 @@
-chess-api.songyangyu.com {
-	tls /etc/caddy/origin-certs/chess-api.songyangyu.com.crt /etc/caddy/origin-certs/chess-api.songyangyu.com.key
-	reverse_proxy 127.0.0.1:8099
+chess-api.integ.life {
+	reverse_proxy 127.0.0.1:8102
 }

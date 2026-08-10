@@ -16,7 +16,7 @@ make test
 ## 生产配置
 
 - 站点：`https://chess.integ.life`
-- API origin：`https://chess-api.songyangyu.com`
+- API origin：`https://chess-api.integ.life`
 - 引擎：`CHESS_ENGINE=stockfish`
 - 引擎路径：`STOCKFISH_PATH` 或 `CHESS_ENGINE_PATH`
 - 数据库：`DB_PATH`
