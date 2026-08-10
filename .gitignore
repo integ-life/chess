@@ -1,0 +1,22 @@
+# dependencies / build
+node_modules/
+frontend/dist/
+backend/bin/
+backend/backend/
+
+# engine binaries & weights (fetched by scripts/fetch-pikafish.sh)
+backend/engines/
+backend/qipu-sources/
+
+# local data
+*.db
+*.db-wal
+*.db-shm
+
+# misc
+.DS_Store
+*.log
+*.pid
+
+# reproducible third-party build cache
+experiments/eleeye-wasm/.cache/

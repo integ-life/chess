@@ -1,0 +1,15 @@
+{
+  "name": "ElephantEye 3.15 WebAssembly",
+  "version": "a9d3914e596da93a150d74af8967edecc0810ef7-cache-v1",
+  "upstreamCommit": "a9d3914e596da93a150d74af8967edecc0810ef7",
+  "hosting": "GitHub Pages",
+  "license": "LGPL-2.1",
+  "sourceUrl": "https://github.com/xqbase/eleeye",
+  "totalBytes": 60322,
+  "runtimeMemoryBytes": 33554432,
+  "files": [
+    { "name": "worker.js", "bytes": 2043 },
+    { "name": "eleeye.js", "bytes": 9850 },
+    { "name": "eleeye.wasm", "bytes": 48429 }
+  ]
+}

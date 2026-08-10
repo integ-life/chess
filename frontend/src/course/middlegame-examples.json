@@ -1,0 +1,152 @@
+{
+  "material": {
+    "id": "0e870fbc594c5a6f525f3d438b9079976d019b6aefb50498fb5510a490417b0e",
+    "title": "第一节-子力的价值-1",
+    "result": "*",
+    "initialFen": "1rb1kab2/4a4/n2cc1n2/pCp1p1p1p/7R1/2P6/P1r1P1P1P/BRN1C1N2/4A4/4KAB2 b - - 0 1",
+    "moves": [
+      "b9b6",
+      "b2b6",
+      "c3c2",
+      "b6b0",
+      "c2a2"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%BD%A2%E5%8A%BF%E5%88%A4%E6%96%AD/%E7%AC%AC%E4%B8%80%E8%8A%82-%E5%AD%90%E5%8A%9B%E7%9A%84%E4%BB%B7%E5%80%BC-1"
+  },
+  "initiative": {
+    "id": "c8e29798aa5c2d14dc94d000a11f8915ea206703b4eb878c7d9471654db17b78",
+    "title": "第二节-子与势的关系-1",
+    "result": "0-1",
+    "initialFen": "2bak1r2/4a3n/2n1bc3/p1p1p2Rp/9/2PN2P2/cC2P3P/3C2N2/9/2BAKAB2 w - - 0 1",
+    "moves": [
+      "h6h8",
+      "g9g4",
+      "d4e2",
+      "g4c4",
+      "h8i8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%BD%A2%E5%8A%BF%E5%88%A4%E6%96%AD/%E7%AC%AC%E4%BA%8C%E8%8A%82-%E5%AD%90%E4%B8%8E%E5%8A%BF%E7%9A%84%E5%85%B3%E7%B3%BB-1"
+  },
+  "worst-piece": {
+    "id": "0631575478e13d9f121b8006606438de4b7ec8371dc31647a5da8d3d4df0115f",
+    "title": "第三节-子力的位置-2",
+    "result": "1-0",
+    "initialFen": "2bk1a3/4a4/n3b4/2pcC3p/3N4c/2Pn1N3/4P4/4BC3/4A4/2BAK4 w - - 0 1",
+    "moves": [
+      "e6h6",
+      "e7g9",
+      "h6h9",
+      "c9e7",
+      "e3e4"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%BD%A2%E5%8A%BF%E5%88%A4%E6%96%AD/%E7%AC%AC%E4%B8%89%E8%8A%82-%E5%AD%90%E5%8A%9B%E7%9A%84%E4%BD%8D%E7%BD%AE-2"
+  },
+  "open-lines": {
+    "id": "ed94db661836973d1b211329efbcd23323f34a7e7889649786d328749bdab7e6",
+    "title": "第四节-选点出击-2-横线攻杀",
+    "result": "1-0",
+    "initialFen": "r2akab2/1C4c2/4b1n2/p1N1n3p/1R1N2pc1/2P6/P5P1P/2C1B3B/4A4/4KA3 w - - 0 1",
+    "moves": [
+      "d5b6",
+      "h5b5",
+      "b6c8",
+      "g8d8",
+      "c6d8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%BD%A2%E5%8A%BF%E5%88%A4%E6%96%AD/%E7%AC%AC%E5%9B%9B%E8%8A%82-%E9%80%89%E7%82%B9%E5%87%BA%E5%87%BB-2-%E6%A8%AA%E7%BA%BF%E6%94%BB%E6%9D%80"
+  },
+  "horse-quality": {
+    "id": "f7263a44105995b93fbcc5992bdb4e17eea0a9016e146017aa3072d964dc45b9",
+    "title": "第三节-紧张致败-惧怕对手-1-退马败着",
+    "result": "1-0",
+    "initialFen": "1R1nkab2/3ra4/C3b4/pN2p3p/9/4P4/5n2P/9/4A4/2BAK1B2 b - - 0 1",
+    "moves": [
+      "f3d4",
+      "b9c9",
+      "d4b5",
+      "a7a9",
+      "e8f7"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%BD%A2%E5%8A%BF%E5%88%A4%E6%96%AD/%E7%AC%AC%E4%B8%89%E8%8A%82-%E7%B4%A7%E5%BC%A0%E8%87%B4%E8%B4%A5-%E6%83%A7%E6%80%95%E5%AF%B9%E6%89%8B-1-%E9%80%80%E9%A9%AC%E8%B4%A5%E7%9D%80"
+  },
+  "cannon-position": {
+    "id": "344784d0f3bdbd495d9be8044dd96d6403b82d5ed84f54ffd50c7bcf4e6cced0",
+    "title": "第一节-痛失良机-错过机会-5-退炮败手",
+    "result": "0-1",
+    "initialFen": "1C1R2n2/3Rak3/4b1c2/p3p3p/2p6/6B2/P1P1P3P/N8/3KA2r1/r6N1 w - - 0 1",
+    "moves": [
+      "b9b1",
+      "a0a1",
+      "b1c1",
+      "g9i8",
+      "d9e9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%BD%A2%E5%8A%BF%E5%88%A4%E6%96%AD/%E7%AC%AC%E4%B8%80%E8%8A%82-%E7%97%9B%E5%A4%B1%E8%89%AF%E6%9C%BA-%E9%94%99%E8%BF%87%E6%9C%BA%E4%BC%9A-5-%E9%80%80%E7%82%AE%E8%B4%A5%E6%89%8B"
+  },
+  "pawn-structure": {
+    "id": "0c068d55de57ebafb8106e7fa0079f9310f1b8cb2fad2ab8238636dfc2b9e354",
+    "title": "第一节-痛失良机-错过机会-8-平兵失误",
+    "result": "1/2-1/2",
+    "initialFen": "3k1ab2/1nN1a4/4b4/2P6/P1pr4p/5R3/9/4BA3/9/3AK1B2 w - - 0 1",
+    "moves": [
+      "c6d6",
+      "c5c4",
+      "f4c4",
+      "d5a5",
+      "c4b4"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%BD%A2%E5%8A%BF%E5%88%A4%E6%96%AD/%E7%AC%AC%E4%B8%80%E8%8A%82-%E7%97%9B%E5%A4%B1%E8%89%AF%E6%9C%BA-%E9%94%99%E8%BF%87%E6%9C%BA%E4%BC%9A-8-%E5%B9%B3%E5%85%B5%E5%A4%B1%E8%AF%AF"
+  },
+  "king-safety": {
+    "id": "db95d42285932c5e87e03ef42260f9c332ee0849c7749d2420d1b76c7d40dcff",
+    "title": "第一节-弃子攻杀-5-弃车杀士破城池",
+    "result": "1-0",
+    "initialFen": "1Cnak2r1/3Ra4/4b1R1b/p1p1N4/8p/2P6/P3P4/2N6/4Ar3/2B1KABcc w - - 0 1",
+    "moves": [
+      "d8d9",
+      "e8d9",
+      "g7e7",
+      "e9f9",
+      "e6g7"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%BD%A2%E5%8A%BF%E5%88%A4%E6%96%AD/%E7%AC%AC%E4%B8%80%E8%8A%82-%E5%BC%83%E5%AD%90%E6%94%BB%E6%9D%80-5-%E5%BC%83%E8%BD%A6%E6%9D%80%E5%A3%AB%E7%A0%B4%E5%9F%8E%E6%B1%A0"
+  },
+  "simplify": {
+    "id": "5c9b4c8ba247af8d8f3332651a18e7922c34246a1ea3f535caea9ad490ba2777",
+    "title": "第二节-兑子取胜-4-妙手换车",
+    "result": "1-0",
+    "initialFen": "2bak4/4a1R2/3rb1nr1/1c2p1pcp/1np6/7R1/2P1P3P/N3C1N2/7C1/2BAKAB2 w - - 0 1",
+    "moves": [
+      "h4b4",
+      "b6b4",
+      "h1h7",
+      "b4g4",
+      "g0i2"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%BD%A2%E5%8A%BF%E5%88%A4%E6%96%AD/%E7%AC%AC%E4%BA%8C%E8%8A%82-%E5%85%91%E5%AD%90%E5%8F%96%E8%83%9C-4-%E5%A6%99%E6%89%8B%E6%8D%A2%E8%BD%A6"
+  },
+  "counterplay": {
+    "id": "bf31a4f1ad034fd751cddf19bc60dc4ba93d13b6f31bea8d788fbb409bb0ebaf",
+    "title": "第四节-小瞧对手-盲目乐观-11-勉强求变",
+    "result": "0-1",
+    "initialFen": "r3kabr1/4a4/2n1b1n2/p1R1p3p/2c6/2R6/P3P3P/C2pC1N2/9/2BAKAB2 w - - 0 1",
+    "moves": [
+      "e2e1",
+      "h9h1",
+      "c6c7",
+      "a9d9",
+      "e1e2"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%BD%A2%E5%8A%BF%E5%88%A4%E6%96%AD/%E7%AC%AC%E5%9B%9B%E8%8A%82-%E5%B0%8F%E7%9E%A7%E5%AF%B9%E6%89%8B-%E7%9B%B2%E7%9B%AE%E4%B9%90%E8%A7%82-11-%E5%8B%89%E5%BC%BA%E6%B1%82%E5%8F%98"
+  }
+}

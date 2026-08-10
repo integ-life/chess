@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="xiangqi-logo" viewBox="0 0 512 512">
+    <rect width="512" height="512" rx="112" fill="#fff7ed"/>
+    <path d="M72 134h368M72 256h368M72 378h368M134 72v368M256 72v368M378 72v368" stroke="#f59e0b" stroke-width="10" stroke-linecap="round" opacity=".45"/>
+    <path d="m168 168 176 176M344 168 168 344" stroke="#92400e" stroke-width="8" stroke-linecap="round" opacity=".32"/>
+    <circle cx="256" cy="256" r="184" fill="#451a03"/>
+    <circle cx="256" cy="256" r="154" fill="#c2410c" stroke="#fde68a" stroke-width="10"/>
+    <circle cx="256" cy="256" r="116" fill="none" stroke="#7f1d1d" stroke-width="9"/>
+    <text x="256" y="266" text-anchor="middle" dominant-baseline="central" font-family="Noto Serif CJK SC, STKaiti, KaiTi, Kaiti SC, serif" font-size="154" font-weight="800" fill="#fff7ed" stroke="#7f1d1d" stroke-width="4" paint-order="stroke">帅</text>
+  </symbol>
+</svg>

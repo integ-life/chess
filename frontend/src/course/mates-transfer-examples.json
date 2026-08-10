@@ -1,0 +1,152 @@
+{
+  "flying-general": {
+    "id": "0c556c61c86b915e4c5c659468851acf5d20ee8e5a7991751304821c006601ec",
+    "title": "对面笑-(二)",
+    "result": "*",
+    "initialFen": "3a5/9/5k3/9/5P3/5r3/9/5C3/r2p5/4K4 w - - 0 1",
+    "moves": [
+      "f5f6",
+      "f7f8",
+      "f6f7",
+      "f8f9",
+      "f7f8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E6%AE%8B%E5%B1%80%E6%9D%80%E6%B3%95/%E5%AF%B9%E9%9D%A2%E7%AC%91-%28%E4%BA%8C%29"
+  },
+  "double-rook": {
+    "id": "a411683da144749465454039e9b1d6e4917d260f2862f00339b72080fd5c33fc",
+    "title": "双车错杀法-01",
+    "result": "1-0",
+    "initialFen": "3k2b2/1nR3R2/4ban2/p1p1p3p/9/2P6/P5r1P/4B4/4A4/1rB1KA3 w - - 0 1",
+    "moves": [
+      "g8d8",
+      "d9e9",
+      "c8c9",
+      "b8d9",
+      "c9d9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E6%9D%80%E6%B3%95%E5%BC%BA%E5%8C%96/%E5%8F%8C%E8%BD%A6%E9%94%99%E6%9D%80%E6%B3%95-01"
+  },
+  "double-cannon": {
+    "id": "439ff059a2f2bbb2a7629450a6babe7db80ca31c0753c24466b17e9d7c5a1611",
+    "title": "天地炮杀法-04",
+    "result": "1-0",
+    "initialFen": "3k1arC1/4R4/b8/9/p1r1c4/9/3n5/4C4/4A4/1R2KAB2 w - - 0 1",
+    "moves": [
+      "e8e9",
+      "d9d8",
+      "b0b8",
+      "d8d7",
+      "e9d9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E6%9D%80%E6%B3%95%E5%BC%BA%E5%8C%96/%E5%A4%A9%E5%9C%B0%E7%82%AE%E6%9D%80%E6%B3%95-04"
+  },
+  "smothered": {
+    "id": "63b66480ed403df32061a2d5ae0c5c181b3422da7bfc9a21f12242e193415179",
+    "title": "042-压马闷杀",
+    "result": "1-0",
+    "initialFen": "3kn4/7R1/3a5/9/9/9/3R5/8B/4r1r2/3K5 w - - 0 1",
+    "moves": [
+      "h8e8",
+      "e1e8",
+      "d3d7",
+      "e8d8",
+      "d7d8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E6%AE%8B%E5%B1%80%E7%B2%BE%E9%80%89/042-%E5%8E%8B%E9%A9%AC%E9%97%B7%E6%9D%80"
+  },
+  "reclining-horse": {
+    "id": "94518e095df819e0be56b0c806ff38694789690d78aa8934531590e8a9a87b03",
+    "title": "18-杀法初阶-十-卧槽马",
+    "result": "1-0",
+    "initialFen": "2b1kab2/1R2a4/9/7N1/9/9/9/4B3B/4r4/5K3 w - - 0 1",
+    "moves": [
+      "b8d8",
+      "e1g1",
+      "i2g4",
+      "g1g3",
+      "h6g8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%AE%98%E7%92%98%E6%AE%8B%E5%B1%80/18-%E6%9D%80%E6%B3%95%E5%88%9D%E9%98%B6-%E5%8D%81-%E5%8D%A7%E6%A7%BD%E9%A9%AC"
+  },
+  "corner-horse": {
+    "id": "eaf7ce59a426879f640352910d2f0a134706e4b5f68bde031482f0a7ab8a80aa",
+    "title": "挂角马-3",
+    "result": "1-0",
+    "initialFen": "3k5/4a4/c4N3/9/9/9/4R4/9/r3Ap3/R3KArc1 w - - 0 1",
+    "moves": [
+      "a0d0",
+      "a7d7",
+      "d0d7",
+      "e8d7",
+      "e3e9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%9F%BA%E6%9C%AC%E6%9D%80%E6%B3%95/%E6%8C%82%E8%A7%92%E9%A9%AC-3"
+  },
+  "horse-cannon": {
+    "id": "88e6a81137a2edc6c8ebe87c53525a24d9c6b487d404b5be00d5156fb9f53c37",
+    "title": "21-杀法初阶-十三-马后炮",
+    "result": "1-0",
+    "initialFen": "2bak4/4a2N1/4b4/9/9/4C4/2pn5/3AB4/4A4/4K4 w - - 0 1",
+    "moves": [
+      "e4e6",
+      "d3f4",
+      "h8f7",
+      "e9f9",
+      "e6f6"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%AE%98%E7%92%98%E6%AE%8B%E5%B1%80/21-%E6%9D%80%E6%B3%95%E5%88%9D%E9%98%B6-%E5%8D%81%E4%B8%89-%E9%A9%AC%E5%90%8E%E7%82%AE"
+  },
+  "iron-gate": {
+    "id": "35e8ff2a3eb1962eefacbc8332fbdf0ddff0755b0d875e0f59868bd019850d55",
+    "title": "夹车炮杀法-02",
+    "result": "1-0",
+    "initialFen": "C3k4/4aP3/3ac4/1R1r2r2/9/9/4p4/9/4A4/C3KAB2 w - - 0 1",
+    "moves": [
+      "a9b9",
+      "e9d9",
+      "a0a9",
+      "d9d8",
+      "b6b8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E6%9D%80%E6%B3%95%E5%BC%BA%E5%8C%96/%E5%A4%B9%E8%BD%A6%E7%82%AE%E6%9D%80%E6%B3%95-02"
+  },
+  "bold-heart": {
+    "id": "516faf636cb9c3421eca0ba34aa11ec051c3e74ffa2979387554804a61d10554",
+    "title": "082-大胆穿心",
+    "result": "1-0",
+    "initialFen": "2bakN3/4c4/4b4/1C1R5/6n2/C8/9/2n1B3c/4Ar3/4KA3 w - - 0 1",
+    "moves": [
+      "d6d9",
+      "e9d9",
+      "a4a9",
+      "c9a7",
+      "b6b9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/Thao-Luoc-Nguyen-Co-Tan-Cuc-Pho/082-%E5%A4%A7%E8%83%86%E7%A9%BF%E5%BF%83"
+  },
+  "stalemate": {
+    "id": "0ca160f6b6f9a5bea7ab06246eb11e1d75c3aaf864063649829ff596a264b5f3",
+    "title": "困毙之三",
+    "result": "*",
+    "initialFen": "9/4P4/3k5/9/1n7/1N7/9/9/4K4/9 w - - 0 1",
+    "moves": [
+      "b4d5",
+      "b5d4",
+      "d5b6",
+      "d4c6",
+      "e1e0"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%9F%BA%E6%9C%AC%E6%88%98%E6%9C%AF/%E5%9B%B0%E6%AF%99%E4%B9%8B%E4%B8%89"
+  }
+}

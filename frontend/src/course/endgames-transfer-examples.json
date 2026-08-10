@@ -1,0 +1,242 @@
+{
+  "king-activity": {
+    "id": "8d5c22eb635129492ba9380b115528e6668a197fcb32141856ddbeb090720ee3",
+    "title": "亮帅助攻之四",
+    "result": "1-0",
+    "initialFen": "3k5/2N6/5P3/9/p8/3n5/9/9/5p3/4K4 w - - 0 1",
+    "moves": [
+      "e0d0",
+      "a5a4",
+      "f7e7",
+      "a4b4",
+      "e7e8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%9F%BA%E6%9C%AC%E6%9D%80%E6%B3%95/%E4%BA%AE%E5%B8%85%E5%8A%A9%E6%94%BB%E4%B9%8B%E5%9B%9B"
+  },
+  "pawn-value": {
+    "id": "089636eb4da34dee54c2e9c5561542745ba99fb48a8024848e06ca8b4f06103c",
+    "title": "002-一-单兵和单炮类-定式02",
+    "result": "1-0",
+    "initialFen": "9/2P6/4k4/9/9/9/9/9/9/5K3 w - - 0 1",
+    "moves": [
+      "c8d8",
+      "e7d7",
+      "d8e8",
+      "d7e7",
+      "e8f8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/Tuong-Ky-Sat-Tru-Dai-Toan-Ly-Duc-Lam/002-%E4%B8%80-%E5%8D%95%E5%85%B5%E5%92%8C%E5%8D%95%E7%82%AE%E7%B1%BB-%E5%AE%9A%E5%BC%8F02"
+  },
+  "waiting": {
+    "id": "c87a538575c204da0c911519b702ae3a0c66d193c137dc511dc43ceca7b494fb",
+    "title": "130-第10局等着战术—赵希涛等着奏功",
+    "result": "*",
+    "initialFen": "3ak1CR1/4a4/4P4/p1p1n4/9/2P6/6rp1/4B4/4A4/2B1K4 w - - 0 1",
+    "moves": [
+      "h9i9",
+      "g3g8",
+      "g9d9",
+      "e8f9",
+      "d9f9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/Tuong-Ky-Chien-Thuat-Tinh-Tuy/130-%E7%AC%AC10%E5%B1%80%E7%AD%89%E7%9D%80%E6%88%98%E6%9C%AF%E2%80%94%E8%B5%B5%E5%B8%8C%E6%B6%9B%E7%AD%89%E7%9D%80%E5%A5%8F%E5%8A%9F"
+  },
+  "fortress": {
+    "id": "6a8da3f600722064eb08a67262a7c6d6f1f8420c46587ee555b08150344b73a5",
+    "title": "25-例和残局-一-炮双仕和单车",
+    "result": "1/2-1/2",
+    "initialFen": "4k4/9/9/9/9/9/7r1/5C3/4A4/3A1K3 w - - 0 1",
+    "moves": [
+      "f0f1",
+      "h3h1",
+      "f1f0",
+      "e9e8",
+      "f2f3"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%AE%98%E7%92%98%E6%AE%8B%E5%B1%80/25-%E4%BE%8B%E5%92%8C%E6%AE%8B%E5%B1%80-%E4%B8%80-%E7%82%AE%E5%8F%8C%E4%BB%95%E5%92%8C%E5%8D%95%E8%BD%A6"
+  },
+  "pawn-defense": {
+    "id": "9ab7bf6c7f8c79eaf9fabc6aa63ea4ed923f04972ce487bce9f10468d637f361",
+    "title": "第476局-一兵解危-(高兵单仕和炮士象全)",
+    "result": "1/2-1/2",
+    "initialFen": "5c3/4k4/3a1a3/6P2/2b3b2/9/9/5A3/5K3/9 w - - 0 1",
+    "moves": [
+      "g6h6",
+      "e8f8",
+      "f2e1",
+      "c5e7",
+      "h6g6"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/Thich-Tinh-Nha-Thu/%E7%AC%AC476%E5%B1%80-%E4%B8%80%E5%85%B5%E8%A7%A3%E5%8D%B1-%28%E9%AB%98%E5%85%B5%E5%8D%95%E4%BB%95%E5%92%8C%E7%82%AE%E5%A3%AB%E8%B1%A1%E5%85%A8%29"
+  },
+  "two-pawns": {
+    "id": "25dfad60a781101c23b0e5d46fa2c66be9cadac7c07940a342897afa02ca2a46",
+    "title": "第482局-二鬼拍门-(双兵巧胜士象全)",
+    "result": "1-0",
+    "initialFen": "3a1kb2/4a1P2/5P2b/9/9/9/9/9/9/5K3 w - - 0 1",
+    "moves": [
+      "f7f8",
+      "f9e9",
+      "f0e0",
+      "i7g5",
+      "g8g9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E6%9D%80%E5%B1%80%E5%AE%9D%E5%85%B8/%E7%AC%AC482%E5%B1%80-%E4%BA%8C%E9%AC%BC%E6%8B%8D%E9%97%A8-%28%E5%8F%8C%E5%85%B5%E5%B7%A7%E8%83%9C%E5%A3%AB%E8%B1%A1%E5%85%A8%29"
+  },
+  "horse": {
+    "id": "5ef7e78b521fe8ecd453fe049ca6e23b8afc18bf02fdf85b3d3e5a6dc7be50b5",
+    "title": "单马和双卒",
+    "result": "1/2-1/2",
+    "initialFen": "9/3P1k3/6P2/9/9/9/9/3n5/9/3K5 w - - 0 1",
+    "moves": [
+      "d0d1",
+      "d2e4",
+      "d1e1",
+      "e4d6",
+      "e1e0"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E8%83%9C%E5%92%8C%E5%AE%9A%E5%BC%8F/%E5%8D%95%E9%A9%AC%E5%92%8C%E5%8F%8C%E5%8D%92"
+  },
+  "cannon": {
+    "id": "fbbbf5d76a81108a315c0bb9f443368734b0b96e5497629b7172c7adf55301ba",
+    "title": "双炮巧胜单炮",
+    "result": "1-0",
+    "initialFen": "5k3/9/c8/9/9/CC7/9/9/4K4/9 w - - 0 1",
+    "moves": [
+      "b4f4",
+      "a7b7",
+      "a4b4",
+      "b7c7",
+      "b4c4"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E8%83%9C%E5%92%8C%E5%AE%9A%E5%BC%8F/%E5%8F%8C%E7%82%AE%E5%B7%A7%E8%83%9C%E5%8D%95%E7%82%AE"
+  },
+  "rook": {
+    "id": "589a526cab8d7f22012b892e448e0273eb003327d28c46060dd47244b00c67fe",
+    "title": "第47局-单车必胜双象",
+    "result": "*",
+    "initialFen": "3k5/9/4b4/9/6b2/1R7/9/9/9/4K4 w - - 0 1",
+    "moves": [
+      "b4b9",
+      "d9d8",
+      "b9e9",
+      "e7c5",
+      "e9e5"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%AE%9E%E6%AE%8B%E6%89%8B%E5%86%8C/%E7%AC%AC47%E5%B1%80-%E5%8D%95%E8%BD%A6%E5%BF%85%E8%83%9C%E5%8F%8C%E8%B1%A1"
+  },
+  "rook-pawn": {
+    "id": "8667d74a4663d02f5d5415bf55e01aa536dd934e7cc5ca06fbf30f34331cec6e",
+    "title": "车兵残局-第113局-车兵和车士-(二)车高兵和车士-2",
+    "result": "1-0",
+    "initialFen": "4k4/4a4/9/4r4/2P6/2R6/9/4B4/4K4/2B2A3 w - - 0 1",
+    "moves": [
+      "c5d5",
+      "e8d9",
+      "c4h4",
+      "d9e8",
+      "h4h5"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E6%AE%8B%E5%B1%80%E5%9F%BA%E7%A1%80/%E8%BD%A6%E5%85%B5%E6%AE%8B%E5%B1%80-%E7%AC%AC113%E5%B1%80-%E8%BD%A6%E5%85%B5%E5%92%8C%E8%BD%A6%E5%A3%AB-%28%E4%BA%8C%29%E8%BD%A6%E9%AB%98%E5%85%B5%E5%92%8C%E8%BD%A6%E5%A3%AB-2"
+  },
+  "mixed-rook": {
+    "id": "d1122303e408143d9e165d358699161d6454b4983680cff59dd8b4c2b39a9136",
+    "title": "车马相巧胜车炮士",
+    "result": "1-0",
+    "initialFen": "9/8c/2Nk1a3/7R1/9/9/2r6/4B4/4K4/9 w - - 0 1",
+    "moves": [
+      "h6d6",
+      "d7e7",
+      "d6e6",
+      "e7d7",
+      "e2c4"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E8%83%9C%E5%92%8C%E5%AE%9A%E5%BC%8F/%E8%BD%A6%E9%A9%AC%E7%9B%B8%E5%B7%A7%E8%83%9C%E8%BD%A6%E7%82%AE%E5%A3%AB"
+  },
+  "cannon-pawn": {
+    "id": "482f527b9865d1befaedf75896bb667e9778b6a27783833712f56a035659c69c",
+    "title": "067-第74局-炮高兵巧胜双象",
+    "result": "1-0",
+    "initialFen": "3k5/9/4b4/9/2b1P4/9/9/9/4K4/5C3 w - - 0 1",
+    "moves": [
+      "e5d5",
+      "c5a7",
+      "f0e0",
+      "a7c9",
+      "d5d6"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E7%82%AE%E5%85%B5%E6%94%BB%E6%9D%80/067-%E7%AC%AC74%E5%B1%80-%E7%82%AE%E9%AB%98%E5%85%B5%E5%B7%A7%E8%83%9C%E5%8F%8C%E8%B1%A1"
+  },
+  "horse-pawn": {
+    "id": "a6d6532459835c8b58f36ef26a00b620a6716970cbcd7d2497023f6dc34cc302",
+    "title": "马兵残局-第25局-马低兵胜马高将",
+    "result": "1-0",
+    "initialFen": "9/4P4/3k5/4n4/N8/9/9/9/9/4K4 w - - 0 1",
+    "moves": [
+      "a5c6",
+      "e6c7",
+      "c6b4",
+      "c7b5",
+      "b4d5"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E6%AE%8B%E5%B1%80%E5%9F%BA%E7%A1%80/%E9%A9%AC%E5%85%B5%E6%AE%8B%E5%B1%80-%E7%AC%AC25%E5%B1%80-%E9%A9%AC%E4%BD%8E%E5%85%B5%E8%83%9C%E9%A9%AC%E9%AB%98%E5%B0%86"
+  },
+  "many-pawns": {
+    "id": "b0fc9dafe9622284eaa971630bc644ddf818b713709f0ae2c8284d19e65f2854",
+    "title": "三兵例胜马双象",
+    "result": "1-0",
+    "initialFen": "3k5/2P2P3/b3b1n2/9/4P4/9/9/9/9/4K4 w - - 0 1",
+    "moves": [
+      "e5e6",
+      "g7e6",
+      "f8e8",
+      "e7g5",
+      "c8d8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E8%83%9C%E5%92%8C%E5%AE%9A%E5%BC%8F/%E4%B8%89%E5%85%B5%E4%BE%8B%E8%83%9C%E9%A9%AC%E5%8F%8C%E8%B1%A1"
+  },
+  "exchange": {
+    "id": "a177b0939f18e7e673e7bef10fc1c8b19c2d5582bfbf5b95cac08172ccb67ab4",
+    "title": "第166局-兑子取势-多卒占优",
+    "result": "*",
+    "initialFen": "4kab2/4a4/4b1n2/p3p3p/4P1c2/8c/PnrN1R3/2N1C1C1B/4A4/2BAK4 b - - 0 1",
+    "moves": [
+      "b3c5",
+      "g2g7",
+      "c5d3",
+      "e1d2",
+      "e6e5"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E4%B8%AD%E5%B1%80%E7%AD%94%E7%96%91/%E7%AC%AC166%E5%B1%80-%E5%85%91%E5%AD%90%E5%8F%96%E5%8A%BF-%E5%A4%9A%E5%8D%92%E5%8D%A0%E4%BC%98"
+  },
+  "defense": {
+    "id": "9f0d0e4573827b84f1078560d6dcce4486c672e898bcf250afb66e0c99935115",
+    "title": "206-第199局附录-马双象守和单车",
+    "result": "1/2-1/2",
+    "initialFen": "4k4/9/4n3b/9/6b2/9/1R7/9/9/4K4 w - - 0 1",
+    "moves": [
+      "b3b9",
+      "e9e8",
+      "b9d9",
+      "e8f8",
+      "d9e9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E6%AE%8B%E5%B1%80%E7%AD%94%E7%96%91/206-%E7%AC%AC199%E5%B1%80%E9%99%84%E5%BD%95-%E9%A9%AC%E5%8F%8C%E8%B1%A1%E5%AE%88%E5%92%8C%E5%8D%95%E8%BD%A6"
+  }
+}

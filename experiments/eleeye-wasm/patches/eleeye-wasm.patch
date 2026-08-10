@@ -1,0 +1,14 @@
+diff --git a/base/rc4prng.h b/base/rc4prng.h
+index f40bca6..7ec6ec5 100644
+--- a/base/rc4prng.h
++++ b/base/rc4prng.h
+@@ -34 +34 @@ struct RC4Struct {
+-#if defined __arm__ || defined __aarch64__ || defined __mips__
++#if defined __arm__ || defined __aarch64__ || defined __mips__ || defined __wasm__ || defined __wasm32__
+diff --git a/base/x86asm.h b/base/x86asm.h
+index f93339f..94f8641 100644
+--- a/base/x86asm.h
++++ b/base/x86asm.h
+@@ -18 +18 @@ inline uint64_t MAKE_LONG_LONG(uint32_t LowLong, uint32_t HighLong) {
+-#if defined __arm__ || defined __aarch64__ || defined __mips__
++#if defined __arm__ || defined __aarch64__ || defined __mips__ || defined __wasm__ || defined __wasm32__

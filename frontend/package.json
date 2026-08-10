@@ -1,0 +1,39 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://chess.integ.life/",
+  "scripts": {
+    "dev": "vite",
+    "build:gh-pages": "GH_PAGES=true vite build && node scripts/prepare-gh-pages.mjs",
+    "build": "tsc -b && vite build",
+    "predeploy": "npm run build:gh-pages",
+    "deploy": "gh-pages -d dist -r git@github.com:integ-life/chess-fe.git",
+    "lint": "oxlint",
+    "test": "vitest run",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@integ-life/metrics-web": "github:integ-life/integ-metrics#2890231",
+    "@tailwindcss/vite": "^4.3.2",
+    "idb": "^8.0.3",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.1",
+    "tailwindcss": "^4.3.2",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "gh-pages": "^6.3.0",
+    "oxlint": "^1.71.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1",
+    "vite-plugin-pwa": "^1.3.0",
+    "vitest": "^3.2.6"
+  }
+}

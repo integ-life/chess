@@ -1,0 +1,152 @@
+{
+  "concentrate": {
+    "id": "e22fa2ec78440e42984cfa2f0bfbb5793f6fc08864ea9c11b95ca526507aef21",
+    "title": "17-第16局-集中火力稳稳打",
+    "result": "*",
+    "initialFen": "3akab1r/4n4/b1n1c4/pCN1p3p/6p2/7C1/P2rc1P1P/4B1N2/2R1A4/1R2KAB2 w - - 0 1",
+    "moves": [
+      "h4c4",
+      "i9i7",
+      "g2e3",
+      "e7e3",
+      "b6b7"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E5%AE%9E%E6%88%98%E4%B8%AD%E5%B1%80/17-%E7%AC%AC16%E5%B1%80-%E9%9B%86%E4%B8%AD%E7%81%AB%E5%8A%9B%E7%A8%B3%E7%A8%B3%E6%89%93"
+  },
+  "open-lines": {
+    "id": "02ace03de3086a28b6a60a459129a80edc9e8517d0be29932c0aa4b6d0e2fc49",
+    "title": "第09局-进兵开路-弃炮入局",
+    "result": "1-0",
+    "initialFen": "3a2R2/4ak3/3c5/3np3p/2b4r1/1N7/3NP3P/B3BC3/4A4/c3KA3 w - - 0 1",
+    "moves": [
+      "e3e4",
+      "d6e4",
+      "f2f1",
+      "h5h1",
+      "d3f4"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E5%BC%83%E5%AD%90%E4%B8%AD%E5%B1%80/%E7%AC%AC09%E5%B1%80-%E8%BF%9B%E5%85%B5%E5%BC%80%E8%B7%AF-%E5%BC%83%E7%82%AE%E5%85%A5%E5%B1%80"
+  },
+  "sacrifice": {
+    "id": "c127e9cc973c0b12243844e8dbeead831746f5ec4ce0e1b397e025b1942a7d0d",
+    "title": "50-第六节-弃子攻杀",
+    "result": "1-0",
+    "initialFen": "2baka3/3r5/1Rn1b3c/p1p1p2rp/6P2/2Pn1N3/P3P3c/C5C2/4N4/2BAKAB1R b - - 0 1",
+    "moves": [
+      "h6h3",
+      "f4h3",
+      "i3e3",
+      "e1d3",
+      "i7i0"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E5%AE%9E%E6%88%98%E4%B8%AD%E5%B1%80/50-%E7%AC%AC%E5%85%AD%E8%8A%82-%E5%BC%83%E5%AD%90%E6%94%BB%E6%9D%80"
+  },
+  "reinforce": {
+    "id": "d8d7e801bccac35b71369d681f326c360fb6da4d4ce8339c01d68044babbba25",
+    "title": "21-第20局-后备增援贵及时",
+    "result": "*",
+    "initialFen": "2b1ka3/4a4/4b1n2/p7p/2p6/1r2pn1RP/P1c1PC3/B1N2C2B/4A4/4KA3 b - - 0 1",
+    "moves": [
+      "c5c4",
+      "e3e4",
+      "f4h3",
+      "f2h2",
+      "g7f5"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E5%AE%9E%E6%88%98%E4%B8%AD%E5%B1%80/21-%E7%AC%AC20%E5%B1%80-%E5%90%8E%E5%A4%87%E5%A2%9E%E6%8F%B4%E8%B4%B5%E5%8F%8A%E6%97%B6"
+  },
+  "exchange-attacker": {
+    "id": "907b9edec126fd6a8f7caf2c1fe9835a35c692bbdaff371312f36eb4d8a2d052",
+    "title": "37-第二节-兑子解围",
+    "result": "1/2-1/2",
+    "initialFen": "1r2kab2/1C3R3/1RnaN4/p3p3p/9/2P3p2/P3r3P/3CB4/4K4/3A1Ac1c b - - 0 1",
+    "moves": [
+      "g0g1",
+      "b7c7",
+      "i0i1",
+      "e1e0",
+      "g1c1"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E5%AE%9E%E6%88%98%E4%B8%AD%E5%B1%80/37-%E7%AC%AC%E4%BA%8C%E8%8A%82-%E5%85%91%E5%AD%90%E8%A7%A3%E5%9B%B4"
+  },
+  "counter": {
+    "id": "201fa8941c686de9ef1be7d11f68aa32997566b21ed28274dbdb847e0b6b78a7",
+    "title": "许银川中局妙手-解杀还杀",
+    "result": "0-1",
+    "initialFen": "2bak2r1/4aR3/NR2b3n/p5p1p/9/P1r1p4/6P1P/4C1N2/4A4/c2K1AB2 b - - 0 1",
+    "moves": [
+      "h9h5",
+      "b7b8",
+      "h5d5",
+      "e2d2",
+      "c4c0"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E4%B8%AD%E5%B1%80%E5%A6%99%E6%89%8B/%E8%AE%B8%E9%93%B6%E5%B7%9D%E4%B8%AD%E5%B1%80%E5%A6%99%E6%89%8B-%E8%A7%A3%E6%9D%80%E8%BF%98%E6%9D%80"
+  },
+  "switch-wings": {
+    "id": "50b71d2af99b6f232f5a58f934ffb9dfe91eed125d6fbf4b188c3b7c05e023c4",
+    "title": "许银川中局妙手-声东击西",
+    "result": "0-1",
+    "initialFen": "4kab2/4a4/4b1c2/4r3p/6p2/p3nR3/cCP5P/N1N1B4/4A4/2BAK4 b - - 0 1",
+    "moves": [
+      "g5g4",
+      "f4g4",
+      "e7g5",
+      "g4f4",
+      "g7c7"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E4%B8%AD%E5%B1%80%E5%A6%99%E6%89%8B/%E8%AE%B8%E9%93%B6%E5%B7%9D%E4%B8%AD%E5%B1%80%E5%A6%99%E6%89%8B-%E5%A3%B0%E4%B8%9C%E5%87%BB%E8%A5%BF"
+  },
+  "position-to-tactics": {
+    "id": "ef4b23366fc819c6a4095607229d95bca10c116d2832063bb2158fe4256e8aae",
+    "title": "第312局-冲兵取势-伸炮打双",
+    "result": "*",
+    "initialFen": "2bak1b2/3ca4/n2c5/2p1p3p/C5rn1/P1P3N2/4P3P/2N1BC3/4A4/1R2KAB2 w - - 0 1",
+    "moves": [
+      "e3e4",
+      "g5d5",
+      "e4e5",
+      "e6e5",
+      "a5e5"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E4%B8%AD%E5%B1%80%E7%AD%94%E7%96%91/%E7%AC%AC312%E5%B1%80-%E5%86%B2%E5%85%B5%E5%8F%96%E5%8A%BF-%E4%BC%B8%E7%82%AE%E6%89%93%E5%8F%8C"
+  },
+  "favorable-endgame": {
+    "id": "c049f342ab3fdb9510ff8f5f4caf2e0612d7ce26ba765be26dca35406e19af2c",
+    "title": "第170局-兑子取势-优胜残局",
+    "result": "*",
+    "initialFen": "2bak4/4a4/4b4/p4c1rp/3CPn3/3n2p2/P1R5P/2C1B1N2/4A4/4KA3 b - - 0 1",
+    "moves": [
+      "d4e2",
+      "e1d2",
+      "f5g3",
+      "d5d8",
+      "c9a7"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E4%B8%AD%E5%B1%80%E7%AD%94%E7%96%91/%E7%AC%AC170%E5%B1%80-%E5%85%91%E5%AD%90%E5%8F%96%E5%8A%BF-%E4%BC%98%E8%83%9C%E6%AE%8B%E5%B1%80"
+  },
+  "master-case": {
+    "id": "8404c501fd5a00d3af39ba66fbcb2b54f74d5e7e627e1c8f2f8591f6a4d5e8c4",
+    "title": "吕钦中局妙手-稳守反击",
+    "result": "0-1",
+    "initialFen": "2bak4/4ar3/r1n1b1c2/p1p1C3p/6p2/2P1P4/P2R2n1P/3RB1N2/1C2A4/3K1AB2 b - - 0 1",
+    "moves": [
+      "g7g9",
+      "e6g6",
+      "g3e4",
+      "d3e3",
+      "a7b7"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E4%B8%AD%E5%B1%80%E5%A6%99%E6%89%8B/%E5%90%95%E9%92%A6%E4%B8%AD%E5%B1%80%E5%A6%99%E6%89%8B-%E7%A8%B3%E5%AE%88%E5%8F%8D%E5%87%BB"
+  }
+}

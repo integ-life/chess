@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="国际象棋">
+  <rect width="512" height="512" rx="108" fill="#78350f"/>
+  <path d="M154 414h220v42H138v-26l16-16Zm31-43h158l20 31H165l20-31Zm30-39h99c-5-35-26-64-62-88l26-50 58 51 30-126-121-64 21 91-79-40 48 101c-52 26-77 67-75 125h55Z" fill="#fff8e7"/>
+</svg>

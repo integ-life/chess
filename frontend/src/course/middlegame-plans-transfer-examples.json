@@ -1,0 +1,152 @@
+{
+  "concentrate": {
+    "id": "92c0dbfc7a555def6b2f2d755e0a0487a90d458f1203379106f2f45deff97d32",
+    "title": "第58局-集中兵力-李来群联攻巧胜",
+    "result": "1-0",
+    "initialFen": "4kab2/4a4/4b4/5P2p/4C4/1N7/C1n5P/4B1cc1/4A4/4KAB2 w - - 0 1",
+    "moves": [
+      "b4c6",
+      "h2h4",
+      "a3a9",
+      "e9d9",
+      "c6b8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%A4%A7%E5%B8%88%E6%AE%8B%E5%B1%80/%E7%AC%AC58%E5%B1%80-%E9%9B%86%E4%B8%AD%E5%85%B5%E5%8A%9B-%E6%9D%8E%E6%9D%A5%E7%BE%A4%E8%81%94%E6%94%BB%E5%B7%A7%E8%83%9C"
+  },
+  "open-lines": {
+    "id": "f699285b40ba8dae644226982713989cef90bad09f17eae7eb9b0e9dde4cd15e",
+    "title": "068-第三节-最后炮鸣划长空-第97局-弃炮开路-边车偷袭",
+    "result": "1-0",
+    "initialFen": "C3kab2/3na4/4b1N1n/1rp1p3p/6p2/2P6/3rP1P1P/R6R1/4AC3/1cBAK1B2 w - - 0 1",
+    "moves": [
+      "f1f8",
+      "b6b1",
+      "f8d8",
+      "d3d8",
+      "a9f9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/Thuc-Chien-Cong-Sat-Ky-Xao/068-%E7%AC%AC%E4%B8%89%E8%8A%82-%E6%9C%80%E5%90%8E%E7%82%AE%E9%B8%A3%E5%88%92%E9%95%BF%E7%A9%BA-%E7%AC%AC97%E5%B1%80-%E5%BC%83%E7%82%AE%E5%BC%80%E8%B7%AF-%E8%BE%B9%E8%BD%A6%E5%81%B7%E8%A2%AD"
+  },
+  "sacrifice": {
+    "id": "159d02ef3aa9235c05626c6342fb1ff5aeff16baf8304c0f110f92f9b431773e",
+    "title": "233-第33局弃子战术一郭瑞霞弃子攻杀",
+    "result": "*",
+    "initialFen": "2r1ka3/4a4/1c2N1n2/p1p1nR2p/9/2P6/P4p2P/R1N1C4/1C2A4/2BAK1cr1 w - - 0 1",
+    "moves": [
+      "b1d1",
+      "c9c7",
+      "f6e6",
+      "b7e7",
+      "e2e7"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/Tuong-Ky-Chien-Thuat-Tinh-Tuy/233-%E7%AC%AC33%E5%B1%80%E5%BC%83%E5%AD%90%E6%88%98%E6%9C%AF%E4%B8%80%E9%83%AD%E7%91%9E%E9%9C%9E%E5%BC%83%E5%AD%90%E6%94%BB%E6%9D%80"
+  },
+  "reinforce": {
+    "id": "cce753b5df58d622ae860626874bbe866d01f3b5f3d0643561c5d18fa416a3c3",
+    "title": "371-344-例-06-附-1-落士防守-攻守兼备-(送往迎来)",
+    "result": "1-0",
+    "initialFen": "6RNr/5k3/4ba3/9/9/9/9/2R1p4/3pAr3/4K4 w - - 0 1",
+    "moves": [
+      "c2c8",
+      "f7e8",
+      "g9g1",
+      "f8f9",
+      "g1f1"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E6%AE%8B%E5%B1%80%E5%85%A8%E4%B9%A6/371-344-%E4%BE%8B-06-%E9%99%84-1-%E8%90%BD%E5%A3%AB%E9%98%B2%E5%AE%88-%E6%94%BB%E5%AE%88%E5%85%BC%E5%A4%87-%28%E9%80%81%E5%BE%80%E8%BF%8E%E6%9D%A5%29"
+  },
+  "exchange-attacker": {
+    "id": "c11e404dbbe042ddf1035720fc85d300ca0bdb2b4f94b034e34a6866e1af9b8e",
+    "title": "2202-弃子-兑子解围战术",
+    "result": "*",
+    "initialFen": "r3kab2/4a4/4b2R1/9/9/9/9/7C1/3p5/4KR3 w - - 0 1",
+    "moves": [
+      "f0f9",
+      "e9f9",
+      "h7f7",
+      "e8f7",
+      "h2h9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E5%BC%83%E5%AD%90/2202-%E5%BC%83%E5%AD%90-%E5%85%91%E5%AD%90%E8%A7%A3%E5%9B%B4%E6%88%98%E6%9C%AF"
+  },
+  "counter": {
+    "id": "c7dc9cbedfa8743939264415d098fa752a9e6fd445328b3bb1e5fc226b26214e",
+    "title": "029-第29局解杀还杀—邹立武一声惊雷",
+    "result": "*",
+    "initialFen": "2bak4/2P1a4/4b4/p3n3p/6r2/4CcN2/P7P/B2R5/3KA4/1r3A1R1 b - - 0 1",
+    "moves": [
+      "f4f1",
+      "e1f2",
+      "f1h1",
+      "h0g0",
+      "g5b5"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/Tuong-Ky-Chien-Thuat-Tinh-Tuy/029-%E7%AC%AC29%E5%B1%80%E8%A7%A3%E6%9D%80%E8%BF%98%E6%9D%80%E2%80%94%E9%82%B9%E7%AB%8B%E6%AD%A6%E4%B8%80%E5%A3%B0%E6%83%8A%E9%9B%B7"
+  },
+  "switch-wings": {
+    "id": "55ad749f5c7c832d21e189743956bc79255dafb771ba80e4f3ab5359f5e94ba2",
+    "title": "第209局-声东击西-谋子成功",
+    "result": "*",
+    "initialFen": "2baka3/r8/2c1b1n2/p2Rp1C1p/7r1/2p3P2/P1n1P2cP/2C3N2/4N4/2BAKABR1 w - - 0 1",
+    "moves": [
+      "g4g5",
+      "h5g5",
+      "h0h3",
+      "g5g6",
+      "d6c6"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E4%B8%AD%E5%B1%80%E7%AD%94%E7%96%91/%E7%AC%AC209%E5%B1%80-%E5%A3%B0%E4%B8%9C%E5%87%BB%E8%A5%BF-%E8%B0%8B%E5%AD%90%E6%88%90%E5%8A%9F"
+  },
+  "position-to-tactics": {
+    "id": "3e770384ce20fb47bf35b14d62f21609f40e7b088278de97a6608707bbcc3291",
+    "title": "第三节-多算胜-少算不胜-第18局-冲兵不怕炮打双",
+    "result": "1-0",
+    "initialFen": "2bak1r2/4a4/4b1c1n/p3n3p/1Cp1prp2/1R4PNP/P1PNP3R/4B4/4Ac3/2BAK2C1 w - - 0 1",
+    "moves": [
+      "e3e4",
+      "f1f4",
+      "e4e5",
+      "f4h4",
+      "g4g5"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/%E4%B8%AD%E5%B1%80%E7%B2%BE%E5%A6%99%E6%88%98%E6%B3%95/%E7%AC%AC%E4%B8%89%E8%8A%82-%E5%A4%9A%E7%AE%97%E8%83%9C-%E5%B0%91%E7%AE%97%E4%B8%8D%E8%83%9C-%E7%AC%AC18%E5%B1%80-%E5%86%B2%E5%85%B5%E4%B8%8D%E6%80%95%E7%82%AE%E6%89%93%E5%8F%8C"
+  },
+  "favorable-endgame": {
+    "id": "5cfab2f02ba10930a3d952cd33777e00832d7f38698096a1b214fe25b5b89bf3",
+    "title": "第17局-兑子简化-徐天红妙用炮卒",
+    "result": "0-1",
+    "initialFen": "5k3/4a4/9/p8/4C1C1p/n2Nc4/2c6/4B4/4A4/4KAB2 b - - 0 1",
+    "moves": [
+      "c3c5",
+      "g5g2",
+      "c5a5",
+      "e5f5",
+      "a4c5"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%A4%A7%E5%B8%88%E6%AE%8B%E5%B1%80/%E7%AC%AC17%E5%B1%80-%E5%85%91%E5%AD%90%E7%AE%80%E5%8C%96-%E5%BE%90%E5%A4%A9%E7%BA%A2%E5%A6%99%E7%94%A8%E7%82%AE%E5%8D%92"
+  },
+  "master-case": {
+    "id": "107e3e5f59ecc5cda8ae1ecfc5c80ab890172412b7aa42dc304feef1b084362e",
+    "title": "581-20011014许银川和吕钦-(吕评)",
+    "result": "*",
+    "initialFen": "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1",
+    "moves": [
+      "g0e2",
+      "g6g5",
+      "c3c4",
+      "h9g7",
+      "b0c2"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/selected-games/Hua-Ngan-Xuyen-Doi-Cuc/581-20011014%E8%AE%B8%E9%93%B6%E5%B7%9D%E5%92%8C%E5%90%95%E9%92%A6-%28%E5%90%95%E8%AF%84%29"
+  }
+}

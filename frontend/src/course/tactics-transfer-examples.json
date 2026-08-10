@@ -1,0 +1,152 @@
+{
+  "fork": {
+    "id": "0fadaebba947bc1399a53ebb948cfe6eccd9060e6de0685ae1f6c7faea876552",
+    "title": "383-第23局捉子战术-黎德志退车捉双",
+    "result": "*",
+    "initialFen": "3ak1b2/9/9/p7p/2b1C4/1Rr1Pnp2/6c1P/N3C4/9/2BAKABc1 b - - 0 1",
+    "moves": [
+      "c4c0",
+      "b4b3",
+      "c0c2",
+      "a2b4",
+      "f4e2"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/Tuong-Ky-Chien-Thuat-Tinh-Tuy/383-%E7%AC%AC23%E5%B1%80%E6%8D%89%E5%AD%90%E6%88%98%E6%9C%AF-%E9%BB%8E%E5%BE%B7%E5%BF%97%E9%80%80%E8%BD%A6%E6%8D%89%E5%8F%8C"
+  },
+  "skewer": {
+    "id": "f7b87199510e0d66a7d19876d51df69f6fc02c3e978eb5f2977f1250c0b654aa",
+    "title": "串打战术-10",
+    "result": "1-0",
+    "initialFen": "2ba5/5k3/4baN2/8C/cnp5p/4n1C2/2P5P/4B4/4A4/2BAK4 w - - 0 1",
+    "moves": [
+      "g7h9",
+      "f8e8",
+      "i6e6",
+      "e7g9",
+      "e6e5"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E6%9D%80%E6%B3%95%E5%BC%BA%E5%8C%96/%E4%B8%B2%E6%89%93%E6%88%98%E6%9C%AF-10"
+  },
+  "pin": {
+    "id": "7e0c66ac1b8c81f29cf8adc12b5dacb768301f5d812cb1f47a4d908ab441a615",
+    "title": "018-第18局牵制战术—王嘉良出将牵马",
+    "result": "*",
+    "initialFen": "5k3/4a4/5an2/p3C1pNp/1n1Np4/3p5/P5P1P/5R3/3KA4/c1r2AB2 w - - 0 1",
+    "moves": [
+      "e6f6",
+      "f9e9",
+      "f2b2",
+      "b5c3",
+      "d1d2"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/Tuong-Ky-Chien-Thuat-Tinh-Tuy/018-%E7%AC%AC18%E5%B1%80%E7%89%B5%E5%88%B6%E6%88%98%E6%9C%AF%E2%80%94%E7%8E%8B%E5%98%89%E8%89%AF%E5%87%BA%E5%B0%86%E7%89%B5%E9%A9%AC"
+  },
+  "discovered": {
+    "id": "dfae12d05b1e3e4e9e4a603365e31190abddddce1c440f9bc50e21fc8ba5d886",
+    "title": "054-第14局闪击战术—黄志强献车闪击",
+    "result": "*",
+    "initialFen": "2Ck1ab2/4a4/3r2n2/p3p3p/1R7/2R6/2P1c1p1P/N6r1/9/1CBAKAB2 w - - 0 1",
+    "moves": [
+      "b5e5",
+      "d7d3",
+      "e5e3",
+      "d3e3",
+      "g0e2"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/Tuong-Ky-Chien-Thuat-Tinh-Tuy/054-%E7%AC%AC14%E5%B1%80%E9%97%AA%E5%87%BB%E6%88%98%E6%9C%AF%E2%80%94%E9%BB%84%E5%BF%97%E5%BC%BA%E7%8C%AE%E8%BD%A6%E9%97%AA%E5%87%BB"
+  },
+  "deflection": {
+    "id": "f8d452e49b8e379eeb4585614ecf728b8c1219b9e25f00bc8045b3f64935a708",
+    "title": "006-第06局引离战术—刘永德弃马引仕",
+    "result": "*",
+    "initialFen": "4kab2/4a4/4bc3/p7p/3Np4/P2n1RB2/1n6r/1C3C3/4A4/2BAK4 b - - 0 1",
+    "moves": [
+      "d4f3",
+      "d5b6",
+      "e5e4",
+      "f4f6",
+      "i3i0"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/Tuong-Ky-Chien-Thuat-Tinh-Tuy/006-%E7%AC%AC06%E5%B1%80%E5%BC%95%E7%A6%BB%E6%88%98%E6%9C%AF%E2%80%94%E5%88%98%E6%B0%B8%E5%BE%B7%E5%BC%83%E9%A9%AC%E5%BC%95%E4%BB%95"
+  },
+  "blockage": {
+    "id": "d6dad61b1202f43aa08fdd1ae4e896386dda6218e39e28866c6a6b673dfed152",
+    "title": "019-第19局堵塞战术—胡荣华两塞象眼",
+    "result": "*",
+    "initialFen": "1nb1k4/5R3/3Rb4/p1p3p2/9/P1P6/4r2r1/9/4A4/2B1KAB2 w - - 0 1",
+    "moves": [
+      "f8d8",
+      "c9a7",
+      "d8d9",
+      "e9e8",
+      "d9b9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/Tuong-Ky-Chien-Thuat-Tinh-Tuy/019-%E7%AC%AC19%E5%B1%80%E5%A0%B5%E5%A1%9E%E6%88%98%E6%9C%AF%E2%80%94%E8%83%A1%E8%8D%A3%E5%8D%8E%E4%B8%A4%E5%A1%9E%E8%B1%A1%E7%9C%BC"
+  },
+  "interference": {
+    "id": "ddf17877cd534229eeeecd025759955531d813939d8a4aa1c08bcede3cfc884e",
+    "title": "037-第37局拦截战术—黄荣幸飞相拦截",
+    "result": "*",
+    "initialFen": "2bakn2R/7r1/3ab4/p2Np4/3n2p2/2C6/c3P3P/1C2B1N2/2c1A4/4KA3 w - - 0 1",
+    "moves": [
+      "c4c6",
+      "h8b8",
+      "c6e6",
+      "d9e8",
+      "b2a2"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/Tuong-Ky-Chien-Thuat-Tinh-Tuy/037-%E7%AC%AC37%E5%B1%80%E6%8B%A6%E6%88%AA%E6%88%98%E6%9C%AF%E2%80%94%E9%BB%84%E8%8D%A3%E5%B9%B8%E9%A3%9E%E7%9B%B8%E6%8B%A6%E6%88%AA"
+  },
+  "defender": {
+    "id": "103a733603d872136b015068bc0723a15b4e41bb88ec20f9d247f2faa0fa540f",
+    "title": "斩草除根",
+    "result": "1-0",
+    "initialFen": "9/9/b3k4/3CC4/9/9/9/4K4/4A4/1pp2pp2 w - - 0 1",
+    "moves": [
+      "e2f2",
+      "e7e8",
+      "f2f1",
+      "e8e7",
+      "d6d3"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/puzzles/%E5%B0%91%E5%AD%90%E7%99%BE%E5%B1%80/%E6%96%A9%E8%8D%89%E9%99%A4%E6%A0%B9"
+  },
+  "exchange": {
+    "id": "edef98bdd0da9b333531ed42215d082365cc948638b1faf792cb636d190a8049",
+    "title": "021-第21局兑子战术—孟立国以多拼少",
+    "result": "*",
+    "initialFen": "2baka3/6c2/4b4/p1r5p/6r2/1C3R3/P3P3P/2N1BC1N1/4A4/2B1KA3 w - - 0 1",
+    "moves": [
+      "f4f8",
+      "d9e8",
+      "b4g4",
+      "g8g4",
+      "h2g4"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/Tuong-Ky-Chien-Thuat-Tinh-Tuy/021-%E7%AC%AC21%E5%B1%80%E5%85%91%E5%AD%90%E6%88%98%E6%9C%AF%E2%80%94%E5%AD%9F%E7%AB%8B%E5%9B%BD%E4%BB%A5%E5%A4%9A%E6%8B%BC%E5%B0%91"
+  },
+  "zwischenzug": {
+    "id": "ac8e7d7c378c5a780cf7ce8772f1a888cfe3f9cb268f61a24cf8ad2df925b94a",
+    "title": "090-第10局顿挫战术—勇金波“过门”清爽",
+    "result": "*",
+    "initialFen": "4kab2/3Na4/3cbP3/p1p5p/1r7/1C4n2/P3P4/1R7/3CA4/2BAK1c2 b - - 0 1",
+    "moves": [
+      "d7c7",
+      "c0a2",
+      "c7f7",
+      "d8c6",
+      "f7h7"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/mid-games/Tuong-Ky-Chien-Thuat-Tinh-Tuy/090-%E7%AC%AC10%E5%B1%80%E9%A1%BF%E6%8C%AB%E6%88%98%E6%9C%AF%E2%80%94%E5%8B%87%E9%87%91%E6%B3%A2%E2%80%9C%E8%BF%87%E9%97%A8%E2%80%9D%E6%B8%85%E7%88%BD"
+  }
+}

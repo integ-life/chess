@@ -1,0 +1,152 @@
+{
+  "flying-general": {
+    "id": "7185db3fac0d41b9432d2bedfd6e6f0a3780c623a1ffc80b39e48cd375464510",
+    "title": "019-对面笑-揭晓",
+    "result": "*",
+    "initialFen": "3aka3/9/4b4/9/9/4R1R2/9/9/3r5/2rAK4 w - - 0 1",
+    "moves": [
+      "e4e7",
+      "d9e8",
+      "e7e8",
+      "f9e8",
+      "g4g9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%AE%9E%E6%AE%8B%E5%A2%9E%E8%AE%A2/019-%E5%AF%B9%E9%9D%A2%E7%AC%91-%E6%8F%AD%E6%99%93"
+  },
+  "double-rook": {
+    "id": "a9ace6afaf090729bece9a74025f02dc0c6aed92369ef581fbf8ff401600b4cd",
+    "title": "双车错-01-1",
+    "result": "1-0",
+    "initialFen": "7R1/3ka4/b7b/9/9/9/9/4B1n2/3rA1r2/1RB1KA3 w - - 0 1",
+    "moves": [
+      "b0b8",
+      "d8d7",
+      "h9h7",
+      "e8f7",
+      "h7f7"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%9F%BA%E6%9C%AC%E6%9D%80%E6%B3%95/%E5%8F%8C%E8%BD%A6%E9%94%99-01-1"
+  },
+  "double-cannon": {
+    "id": "1c29c5f9927815795acd925d7f0d690cb83e6857cad5fa54de5e227731a44b7a",
+    "title": "013-双重炮-揭晓",
+    "result": "*",
+    "initialFen": "3k1ab2/2R6/b2a5/8C/9/9/9/4C4/5r1c1/4K3c w - - 0 1",
+    "moves": [
+      "c8d8",
+      "d9d8",
+      "e2d2",
+      "d7e8",
+      "i6d6"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%AE%9E%E6%AE%8B%E5%A2%9E%E8%AE%A2/013-%E5%8F%8C%E9%87%8D%E7%82%AE-%E6%8F%AD%E6%99%93"
+  },
+  "smothered": {
+    "id": "1bcb70ecdcdc901209a5bfed00869db9f1fbe52b1dd19e5d97fbdde286cbcb72",
+    "title": "017-闷宫炮-揭晓",
+    "result": "*",
+    "initialFen": "5a3/1r2ak3/9/9/9/2P1R4/9/9/3pA4/c1pAKC3 w - - 0 1",
+    "moves": [
+      "e1f2",
+      "e8f7",
+      "e4e8",
+      "b8e8",
+      "f2e1"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%AE%9E%E6%AE%8B%E5%A2%9E%E8%AE%A2/017-%E9%97%B7%E5%AE%AB%E7%82%AE-%E6%8F%AD%E6%99%93"
+  },
+  "reclining-horse": {
+    "id": "3653a6bb58fb89d0e76e50acdff435f8f61dec92e79dea40e0b094e82d64baad",
+    "title": "003-卧槽马-揭晓",
+    "result": "*",
+    "initialFen": "2baka3/9/4b2RN/9/9/9/9/7C1/2p1p4/3K1C2r w - - 0 1",
+    "moves": [
+      "h7e7",
+      "c9e7",
+      "i7g8",
+      "e9e8",
+      "h2h8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%AE%9E%E6%AE%8B%E5%A2%9E%E8%AE%A2/003-%E5%8D%A7%E6%A7%BD%E9%A9%AC-%E6%8F%AD%E6%99%93"
+  },
+  "corner-horse": {
+    "id": "53ca334186e9c54eace31cd30985cf42d73ca8bc17397c949b12d213c69b1a24",
+    "title": "007-挂角马-揭晓",
+    "result": "*",
+    "initialFen": "3k5/5R3/4RN3/9/9/9/9/4B4/2nr1rn2/4K4 w - - 0 1",
+    "moves": [
+      "f8f9",
+      "d9d8",
+      "f9d9",
+      "d8d9",
+      "e7e9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%AE%9E%E6%AE%8B%E5%A2%9E%E8%AE%A2/007-%E6%8C%82%E8%A7%92%E9%A9%AC-%E6%8F%AD%E6%99%93"
+  },
+  "horse-cannon": {
+    "id": "c40ff71574be33cbadaacb43ddaacff113497e6edf67e1bddfae72e66f7f30c1",
+    "title": "011-马后炮-揭晓",
+    "result": "*",
+    "initialFen": "3akab2/9/c3b4/5N3/9/5R3/9/4BC3/2nr5/4KA3 w - - 0 1",
+    "moves": [
+      "f6g8",
+      "e9e8",
+      "f4f8",
+      "e8f8",
+      "g8f6"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%AE%9E%E6%AE%8B%E5%A2%9E%E8%AE%A2/011-%E9%A9%AC%E5%90%8E%E7%82%AE-%E6%8F%AD%E6%99%93"
+  },
+  "iron-gate": {
+    "id": "3e37e6606c98287777d654d43184f52fd82413df160217c3e97c7986a1defbbe",
+    "title": "铁门栓-02-1",
+    "result": "1-0",
+    "initialFen": "r3ka3/2P1a4/b3b4/4C4/9/3R5/7c1/4p4/4A4/3K1A3 w - - 0 1",
+    "moves": [
+      "c8d8",
+      "a9b9",
+      "d8d9",
+      "b9d9",
+      "d4d9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%9F%BA%E6%9C%AC%E6%9D%80%E6%B3%95/%E9%93%81%E9%97%A8%E6%A0%93-02-1"
+  },
+  "bold-heart": {
+    "id": "690eaae3602ea04c7f95979468347ae88914c4246beb4f53d558caf5577357dd",
+    "title": "039-大胆穿心-揭晓",
+    "result": "*",
+    "initialFen": "4ka3/4a2R1/4b4/4p1C2/9/6R2/9/4C4/rcn1A4/3K1A3 w - - 0 1",
+    "moves": [
+      "g6g9",
+      "e7g9",
+      "h8e8",
+      "f9e8",
+      "g4g9"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%AE%9E%E6%AE%8B%E5%A2%9E%E8%AE%A2/039-%E5%A4%A7%E8%83%86%E7%A9%BF%E5%BF%83-%E6%8F%AD%E6%99%93"
+  },
+  "stalemate": {
+    "id": "6b80cd19952511869b2986d8c2f16b8d8a6f4e30239685b6922f0699bb807e00",
+    "title": "困毙-01-1",
+    "result": "1-0",
+    "initialFen": "3ar4/4a4/1N3k1P1/9/9/9/9/9/9/4K4 w - - 0 1",
+    "moves": [
+      "h7g7",
+      "f7f8",
+      "g7g8",
+      "f8f9",
+      "b7d8"
+    ],
+    "sourceName": "Vietcotuong Community Database",
+    "sourceUrl": "https://github.com/chasoft/community-xiangqi-games-database/blob/main/data/end-games/%E5%9F%BA%E6%9C%AC%E6%9D%80%E6%B3%95/%E5%9B%B0%E6%AF%99-01-1"
+  }
+}

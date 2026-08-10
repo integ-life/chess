@@ -1,0 +1,10 @@
+{
+  "comment": "Standard international chess perft counts shared by Go and TypeScript.",
+  "fixtures": [
+    {
+      "name": "startpos",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "perft": { "1": 20, "2": 400, "3": 8902, "4": 197281 }
+    }
+  ]
+}
