@@ -1,3 +1,6 @@
+import { useI18n } from '../i18n'
+import { playMessages } from '../playI18n'
+
 interface MoveListProps {
   // 中文记法着法，偶数下标为红方
   moves: string[]
@@ -7,6 +10,8 @@ interface MoveListProps {
 }
 
 export default function MoveList({ moves, current, onSelect }: MoveListProps) {
+  const { locale } = useI18n()
+  const text = playMessages[locale]
   const cur = current ?? moves.length
   const rows: { no: number; red?: string; black?: string }[] = []
   for (let i = 0; i < moves.length; i += 2) {
@@ -18,7 +23,7 @@ export default function MoveList({ moves, current, onSelect }: MoveListProps) {
     }`
   return (
     <div className="max-h-96 overflow-y-auto font-mono text-sm">
-      {rows.length === 0 && <p className="text-gray-400">尚无着法</p>}
+      {rows.length === 0 && <p className="text-gray-400">{text.noMoves}</p>}
       <table>
         <tbody>
           {rows.map((row) => (

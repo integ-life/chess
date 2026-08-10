@@ -30,6 +30,8 @@ import type { VariationTree } from '../stores/exploreStore'
 import { gameStatus } from '../chess/movegen'
 import { moveToChinese } from '../chess/notation'
 import { opposite } from '../chess/types'
+import { useI18n } from '../i18n'
+import { playMessages } from '../playI18n'
 
 const COLOR_NAME = { r: '红方', b: '黑方' } as const
 type PlayTab = 'game' | 'history'
@@ -198,6 +200,8 @@ function OnlineGameResultOverlay({
 }
 
 export default function PlayPage() {
+  const { locale } = useI18n()
+  const text = playMessages[locale]
   const { positions, moves, initialFen, config, thinking, engineError, lastScore, start, playUser, undo } =
     usePlayStore()
   const [draft, setDraft] = useState<PlayConfig>(config)
@@ -595,7 +599,7 @@ export default function PlayPage() {
 
   const setupPanel = (
     <div className="rounded-lg border border-amber-200 bg-white p-4">
-      <h2 className="mb-2 text-sm font-semibold text-amber-900">新对局</h2>
+      <h2 className="mb-2 text-sm font-semibold text-amber-900">{text.newGame}</h2>
       <div className="flex flex-col gap-3 text-sm">
         <div className="flex gap-2">
           {(['ai', 'hotseat'] as const).map((mode) => (
@@ -608,19 +612,19 @@ export default function PlayPage() {
               }`}
               onClick={() => setDraft({ ...draft, mode })}
             >
-              {mode === 'ai' ? '人机对战' : '双人对战'}
+              {mode === 'ai' ? text.vsComputer : text.twoPlayers}
             </button>
           ))}
         </div>
         {draft.mode === 'ai' && !online && (
           <p className="rounded-md bg-gray-100 p-2 text-xs text-gray-500">
-            离线状态下无法人机对战，可切换双人对战或去推演。
+            {text.offlineAiUnavailable}
           </p>
         )}
         {draft.mode === 'ai' && (
           <>
             <label className="flex items-center gap-2">
-              <span className="whitespace-nowrap text-gray-600">难度 {draft.aiLevel}</span>
+              <span className="whitespace-nowrap text-gray-600">{text.difficulty} {draft.aiLevel}</span>
               <input
                 type="range"
                 min="1"
@@ -631,7 +635,7 @@ export default function PlayPage() {
               />
             </label>
             <div className="flex items-center gap-2">
-              <span className="text-gray-600">执子</span>
+              <span className="text-gray-600">{text.playAs}</span>
               {(['r', 'b'] as const).map((c) => (
                 <button
                   key={c}
@@ -642,7 +646,7 @@ export default function PlayPage() {
                   }`}
                   onClick={() => setDraft({ ...draft, playerColor: c })}
                 >
-                  {COLOR_NAME[c]}
+                  {c === 'r' ? text.white : text.black}
                 </button>
               ))}
             </div>
@@ -652,7 +656,7 @@ export default function PlayPage() {
           className="rounded-md bg-amber-700 px-3 py-1.5 font-medium text-white hover:bg-amber-800"
           onClick={startLocalGame}
         >
-          开始
+          {text.start}
         </button>
         <button
           className="rounded-md border border-amber-700 px-3 py-1.5 font-medium text-amber-900 hover:bg-amber-100 disabled:opacity-50"
@@ -660,12 +664,12 @@ export default function PlayPage() {
           onClick={() => void matchOnline()}
           type="button"
         >
-          {matching ? '匹配中...' : '在线匹配'}
+          {matching ? text.matching : text.onlineMatch}
         </button>
         <div className="rounded-md border border-amber-200 bg-amber-50 p-2">
           <div className="mb-2 grid grid-cols-2 gap-2 text-xs">
             <label className="flex flex-col gap-1 text-gray-600">
-              基础时间
+              {text.initialTime}
               <select
                 className="rounded-md border border-amber-200 bg-white px-2 py-1 text-sm text-amber-950 outline-none focus:border-amber-600"
                 value={initialMinutes}
@@ -673,13 +677,13 @@ export default function PlayPage() {
               >
                 {TIME_OPTIONS.map((minutes) => (
                   <option key={minutes} value={minutes}>
-                    {minutes} 分钟
+                    {minutes} {text.minutes}
                   </option>
                 ))}
               </select>
             </label>
             <label className="flex flex-col gap-1 text-gray-600">
-              每步加秒
+              {text.increment}
               <select
                 className="rounded-md border border-amber-200 bg-white px-2 py-1 text-sm text-amber-950 outline-none focus:border-amber-600"
                 value={incrementSeconds}
@@ -687,7 +691,7 @@ export default function PlayPage() {
               >
                 {INCREMENT_OPTIONS.map((seconds) => (
                   <option key={seconds} value={seconds}>
-                    +{seconds} 秒
+                    +{seconds} {text.seconds}
                   </option>
                 ))}
               </select>
@@ -700,7 +704,7 @@ export default function PlayPage() {
               onClick={() => void createRoom()}
               type="button"
             >
-              创建好友房
+              {text.createRoom}
             </button>
             <button
               className="rounded-md border border-amber-300 px-3 py-1.5 font-medium text-amber-900 hover:bg-amber-100 disabled:opacity-50"
@@ -708,18 +712,18 @@ export default function PlayPage() {
               onClick={() => void joinRoom()}
               type="button"
             >
-              加入
+              {text.join}
             </button>
           </div>
           <input
             className="mt-2 w-full rounded-md border border-amber-200 bg-white px-2 py-1.5 text-sm uppercase text-amber-950 outline-none focus:border-amber-600"
             onChange={(event) => setRoomCodeInput(event.target.value.toUpperCase())}
-            placeholder="输入房间码"
+            placeholder={text.roomCodePlaceholder}
             value={roomCodeInput}
           />
         </div>
         <p className="text-xs text-gray-500">
-          在线匹配优先等待真人；约 8 秒未匹配到时自动进入人机局。
+          {text.matchmakingHint}
         </p>
       </div>
     </div>
@@ -763,10 +767,10 @@ export default function PlayPage() {
       <div className="mx-auto max-w-3xl">
         <div className="mb-4 flex items-center gap-2">
           <button className={tabClass('game')} onClick={() => setTab('game')} type="button">
-            对局
+            {text.game}
           </button>
           <button className={tabClass('history')} onClick={() => setTab('history')} type="button">
-            历史
+            {text.history}
           </button>
         </div>
         <div className="rounded-lg border border-amber-200 bg-white p-4">
@@ -897,10 +901,10 @@ export default function PlayPage() {
     <div>
       <div className="mb-4 flex items-center gap-2">
         <button className={tabClass('game')} onClick={() => setTab('game')} type="button">
-          对局
+          {text.game}
         </button>
         <button className={tabClass('history')} onClick={() => setTab('history')} type="button">
-          历史
+          {text.history}
         </button>
       </div>
       {onlineWaiting ? (
@@ -943,14 +947,14 @@ export default function PlayPage() {
                 : `${winner}胜（${status === 'checkmate' ? '将死' : '困毙'}）`}
             </p>
           ) : thinking || onlineMatch?.botThinking ? (
-            <p className="animate-pulse font-medium text-amber-700">引擎思考中…</p>
+            <p className="animate-pulse font-medium text-amber-700">{text.engineThinking}</p>
           ) : (
             <p className="font-medium">
-              轮到{' '}
+              {text.turn}{' '}
               <span className={pos.turn === 'r' ? 'text-red-700' : 'text-gray-800'}>
-                {COLOR_NAME[pos.turn]}
+                {pos.turn === 'r' ? text.white : text.black}
               </span>{' '}
-              走
+              {text.toMove}
             </p>
           )}
           {onlineError && <p className="mt-1 text-xs text-red-600">在线对局错误：{onlineError}</p>}
@@ -993,14 +997,14 @@ export default function PlayPage() {
                   onClick={undo}
                   disabled={moves.length === 0 || thinking}
                 >
-                  悔棋
+                  {text.undo}
                 </button>
                 <button
                   className="rounded-md border border-amber-300 px-3 py-1 text-sm font-medium text-amber-900 hover:bg-amber-100 disabled:opacity-40"
                   onClick={() => void saveGame()}
                   disabled={moves.length === 0 || thinking}
                 >
-                  保存棋谱
+                  {text.saveGame}
                 </button>
               </>
             )}
@@ -1009,7 +1013,7 @@ export default function PlayPage() {
 
         {/* 着法 */}
         <div className="rounded-lg border border-amber-200 bg-white p-4">
-          <h2 className="mb-2 text-sm font-semibold text-amber-900">着法</h2>
+          <h2 className="mb-2 text-sm font-semibold text-amber-900">{text.moves}</h2>
           <MoveList moves={movesCN} />
         </div>
         </div>
