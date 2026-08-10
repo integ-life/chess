@@ -5,7 +5,10 @@ import { findKing, inCheck, legalMoves } from '../../chess/movegen'
 import { useBoardThemeStore } from '../../stores/boardThemeStore'
 
 interface BoardProps { position: Position; lastMove?: Move | null; moveColor?: Color; onMove?: (m: Move) => void; flipped?: boolean }
-const GLYPH: Record<string,string>={rk:'♔',ra:'♕',rc:'♕',rr:'♖',re:'♗',rh:'♘',rp:'♙',bk:'♚',ba:'♛',bc:'♛',br:'♜',be:'♝',bh:'♞',bp:'♟'}
+// Use the solid Unicode silhouettes for both sides and distinguish sides with
+// CSS fill colors. The outlined “white” code points (♔–♙) are hollow shapes,
+// so applying a white fill still leaves the pieces looking unfilled.
+const GLYPH: Record<string,string>={rk:'♚',ra:'♛',rc:'♛',rr:'♜',re:'♝',rh:'♞',rp:'♟',bk:'♚',ba:'♛',bc:'♛',br:'♜',be:'♝',bh:'♞',bp:'♟'}
 
 export default function Board({position,lastMove,moveColor,onMove,flipped}:BoardProps){
   const [selected,setSelected]=useState<Square|null>(null),theme=useBoardThemeStore((s)=>s.theme)
