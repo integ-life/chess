@@ -2,11 +2,16 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import { execFileSync } from 'node:child_process'
 
 const base = '/'
 const swVersion = process.env.SW_VERSION ?? new Date().toISOString().replace(/[-:.TZ]/g, '')
 const buildTime = process.env.BUILD_TIME ?? new Date().toISOString()
 const appVersion = process.env.APP_VERSION ?? swVersion
+const git = (...args: string[]) => execFileSync('git', args, { cwd: '..', encoding: 'utf8' }).trim()
+const buildCommit = process.env.BUILD_COMMIT ?? git('rev-parse', 'HEAD')
+const buildDirty = process.env.BUILD_DIRTY ? process.env.BUILD_DIRTY === 'true' : git('status', '--porcelain').length > 0
+const buildVersion = process.env.BUILD_VERSION ?? `git-${buildCommit.slice(0, 12)}${buildDirty ? '-dirty' : ''}`
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -24,6 +29,19 @@ export default defineConfig({
           type: 'asset',
           fileName: 'app-version.json',
           source: `${JSON.stringify({ version: appVersion, swVersion, buildTime })}\n`,
+        })
+        this.emitFile({
+          type: 'asset',
+          fileName: 'build-version.json',
+          source: `${JSON.stringify({
+            schema: 'integ.life/build-version/v1',
+            repository: 'integ-life/chess',
+            service: 'chess.integ.life',
+            version: buildVersion,
+            commit: buildCommit,
+            builtAt: buildTime,
+            dirty: buildDirty,
+          }, null, 2)}\n`,
         })
       },
     },

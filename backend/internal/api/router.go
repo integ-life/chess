@@ -43,6 +43,7 @@ func (s *Server) Router() http.Handler {
 	}
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /api/health", s.handleHealth)
+	mux.HandleFunc("GET /api/version", func(w http.ResponseWriter, _ *http.Request) { writeJSON(w, http.StatusOK, currentBuildVersion("integ-life/chess", "chess-api")) })
 	mux.HandleFunc("POST /api/auth/register", s.handleRegister)
 	mux.HandleFunc("POST /api/auth/login", s.handleLogin)
 	mux.HandleFunc("GET /api/auth/integ/start", s.handleIntegAuthStart)
