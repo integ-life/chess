@@ -3,7 +3,7 @@ import { consumeUnifiedLoginError, startUnifiedLogin } from '../auth'
 import { useI18n } from '../i18n'
 
 export default function LoginPage() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const [error] = useState<string | null>(() => consumeUnifiedLoginError())
 
   return (
@@ -19,7 +19,7 @@ export default function LoginPage() {
         {error && <p className="mt-5 text-sm text-red-700">{error}</p>}
         <button
           className="mt-5 w-full rounded-md bg-amber-800 px-3 py-2 font-medium text-white hover:bg-amber-900"
-          onClick={startUnifiedLogin}
+          onClick={() => startUnifiedLogin(locale)}
           type="button"
         >
           {t('continueWith')}

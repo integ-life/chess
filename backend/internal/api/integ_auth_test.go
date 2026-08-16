@@ -74,7 +74,7 @@ func TestIntegAuthUsesPKCEAndCreatesLocalSession(t *testing.T) {
 		return http.ErrUseLastResponse
 	}
 
-	start, err := client.Get(server.URL + "/api/auth/integ/start")
+	start, err := client.Get(server.URL + "/api/auth/integ/start?ui_locales=fr-CA")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -90,6 +90,7 @@ func TestIntegAuthUsesPKCEAndCreatesLocalSession(t *testing.T) {
 	if authorizeURL.Host != identity.Listener.Addr().String() ||
 		authorizeURL.Query().Get("client_id") != "chess" ||
 		authorizeURL.Query().Get("code_challenge_method") != "S256" ||
+		authorizeURL.Query().Get("ui_locales") != "fr-CA" ||
 		authorizeURL.Query().Get("theme") != "chess" ||
 		expectedChallenge == "" {
 		t.Fatalf("unexpected authorize URL: %s", authorizeURL)

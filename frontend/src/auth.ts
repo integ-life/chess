@@ -95,8 +95,8 @@ export async function logout(): Promise<void> {
   useAuthStore.getState().clearSession()
 }
 
-export function startUnifiedLogin(): void {
-  window.location.assign(apiUrl('/auth/integ/start'))
+export function startUnifiedLogin(locale: string): void {
+  window.location.assign(apiUrl(`/auth/integ/start?ui_locales=${encodeURIComponent(locale)}`))
 }
 
 export function parseUnifiedLoginFragment(fragment: string): { token?: string; error?: string } | null {

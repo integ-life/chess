@@ -15,6 +15,14 @@ export const appBuild = {
 
 export const changelog: ChangelogEntry[] = [
   {
+    version: '2026.08.16-auth-locale-handoff',
+    date: '2026-08-16',
+    title: '统一登录页跟随界面语言',
+    changes: [
+      '从国际象棋进入 Integ.Life 统一登录时，会把当前选择的界面语言安全传给认证服务；中文、英语、西班牙语、法语、德语、印尼语、日语和韩语登录页不再固定显示英文。',
+    ],
+  },
+  {
     version: '2026.08.10-login-routing-fix',
     date: '2026-08-10',
     title: '修复统一登录入口路由',

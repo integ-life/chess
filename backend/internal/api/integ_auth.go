@@ -66,6 +66,9 @@ func (s *Server) handleIntegAuthStart(w http.ResponseWriter, r *http.Request) {
 		"code_challenge_method": {"S256"},
 		"theme":                 {"chess"},
 	}
+	if locale := strings.TrimSpace(r.URL.Query().Get("ui_locales")); locale != "" && len(locale) <= 64 {
+		query.Set("ui_locales", locale)
+	}
 	http.Redirect(w, r, config.issuer+"/authorize?"+query.Encode(), http.StatusFound)
 }
 
