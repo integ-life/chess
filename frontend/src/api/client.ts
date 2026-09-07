@@ -1,4 +1,4 @@
-const RAW_API_BASE = import.meta.env.VITE_API_BASE_URL?.trim() || '/api'
+const RAW_API_BASE = import.meta.env.VITE_API_BASE_URL?.trim() || (import.meta.env.PROD ? 'https://chess-api.integ.life/api' : '/api')
 const API_BASE_URL = RAW_API_BASE.replace(/\/$/, '')
 
 export function apiUrl(path: string): string {

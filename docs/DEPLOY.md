@@ -98,3 +98,8 @@ ss -ltn | grep ':443'
 
 - 服务与 Nginx 的自动外部健康监控
 - 灾备与数据备份策略（`app.db`）
+
+
+## Direct API deployment (2026-09-07)
+
+Static frontends remain on GitHub Pages. Production browser API and OAuth callbacks use `https://chess-api.integ.life/api` directly. Configuration migration: `integ-prod-infra/scripts/migrate-direct-api.py`. Retain root-only environment backups. Do not broaden CORS or cookie domains. Old same-origin sessions may require sign-in again.

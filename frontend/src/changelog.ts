@@ -14,6 +14,7 @@ export const appBuild = {
 }
 
 export const changelog: ChangelogEntry[] = [
+  { version: '2026.09.07-direct-api', date: '2026-09-07', title: '服务连接优化', changes: ['页面直接连接专用 API 服务，减少转发依赖。'] },
   {
     version: '2026.08.16-auth-locale-handoff',
     date: '2026-08-16',
