@@ -2,32 +2,32 @@ package engine
 
 import "testing"
 
-func TestConfigFromEnvDefaultsToElephantEye(t *testing.T) {
+func TestConfigFromEnvDefaultsToStockfish(t *testing.T) {
 	cfg := ConfigFromEnv()
-	if cfg.Name != "ElephantEye" {
-		t.Fatalf("Name = %q, want ElephantEye", cfg.Name)
+	if cfg.Name != "Stockfish" {
+		t.Fatalf("Name = %q, want Stockfish", cfg.Name)
 	}
-	if cfg.Protocol != ProtocolUCCI {
-		t.Fatalf("Protocol = %q, want %q", cfg.Protocol, ProtocolUCCI)
+	if cfg.Protocol != ProtocolUCI {
+		t.Fatalf("Protocol = %q, want %q", cfg.Protocol, ProtocolUCI)
 	}
-	if cfg.BinPath != "engines/eleeye" {
-		t.Fatalf("BinPath = %q, want engines/eleeye", cfg.BinPath)
+	if cfg.BinPath != "engines/stockfish" {
+		t.Fatalf("BinPath = %q, want engines/stockfish", cfg.BinPath)
 	}
 }
 
-func TestConfigFromEnvElephantEye(t *testing.T) {
-	t.Setenv("XIANGQI_ENGINE", "elephanteye")
-	t.Setenv("ELEPHANTEYE_PATH", "/opt/eleeye")
+func TestConfigFromEnvStockfishPath(t *testing.T) {
+	t.Setenv("CHESS_ENGINE", "stockfish")
+	t.Setenv("STOCKFISH_PATH", "/usr/games/stockfish")
 
 	cfg := ConfigFromEnv()
-	if cfg.Name != "ElephantEye" {
-		t.Fatalf("Name = %q, want ElephantEye", cfg.Name)
+	if cfg.Name != "Stockfish" {
+		t.Fatalf("Name = %q, want Stockfish", cfg.Name)
 	}
-	if cfg.Protocol != ProtocolUCCI {
-		t.Fatalf("Protocol = %q, want %q", cfg.Protocol, ProtocolUCCI)
+	if cfg.Protocol != ProtocolUCI {
+		t.Fatalf("Protocol = %q, want %q", cfg.Protocol, ProtocolUCI)
 	}
-	if cfg.BinPath != "/opt/eleeye" {
-		t.Fatalf("BinPath = %q, want /opt/eleeye", cfg.BinPath)
+	if cfg.BinPath != "/usr/games/stockfish" {
+		t.Fatalf("BinPath = %q, want /usr/games/stockfish", cfg.BinPath)
 	}
 }
 

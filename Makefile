@@ -53,6 +53,10 @@ qipu-status:
 		echo "qipu worker running pid=$$(cat qipu-worker.pid)"; \
 	else echo "qipu worker is not running"; fi; tail -n 12 qipu-worker.log 2>/dev/null || true
 
-# 编译并部署到远端 gFlyfy（含版本注入 + 重启 + 健康检查）
+# 编译并部署到 Raspberry Pi（含版本注入、数据库备份、重启和健康检查）
 deploy-backend:
-	./scripts/deploy-backend-gcp.sh
+	./scripts/deploy-backend-pi.sh
+
+# 仅用于有意回滚到旧 GCE。
+deploy-backend-gce:
+	ALLOW_LEGACY_GCE_DEPLOY=1 ./scripts/deploy-backend-gcp.sh

@@ -2,7 +2,7 @@
 
 ## 当前状态
 
-当前生产后端运行在 Snake GCP 的 `chinese-chess.service`，本地构建 Go 二进制后通过 `scripts/deploy-backend-gcp.sh` 发布。
+当前生产后端运行在 `songyy-pi` 的 `chess.service`，监听 `127.0.0.1:8102`，由 Cloudflare Tunnel `integ-pi` 暴露为 `https://chess-api.integ.life`。本地通过 `scripts/deploy-backend-pi.sh` 交叉编译 ARM64 二进制并发布。
 
 当前文档还持续维护本地开发与运行基线参数（便于复现）。
 
@@ -29,16 +29,19 @@ go build -o bin/server ./cmd/server
 PORT=8080 DB_PATH=app.db ./bin/server
 ```
 
-## Snake GCP 部署（当前）
+## Raspberry Pi 部署（当前）
 
 ### 形态
 
-- 产物：本地交叉编译的 `backend/bin/server-linux`
-- 发布入口：`scripts/deploy-backend-gcp.sh`
-- 远端二进制：`/usr/local/bin/chinese-chess-backend`
-- 进程托管：system service `chinese-chess.service`，监听 `:8098`
-- 公开 API：`https://chinese-chess.integ.life/api`
-- Cloudflare origin：`https://xq-api.songyangyu.com`
+- 产物：本地交叉编译的 Linux ARM64 `chess-backend`
+- 发布入口：`scripts/deploy-backend-pi.sh` 或 `make deploy-backend`
+- 远端二进制：`/usr/local/bin/chess-backend`
+- 进程托管：system service `chess.service`，监听 `127.0.0.1:8102`
+- 数据库：`/var/lib/chess/app.db`
+- 公开 API：`https://chess-api.integ.life/api`
+- Tunnel：`integ-pi` 路由到 `http://localhost:8102`
+
+旧 GCE `integ-prod` 上的服务、数据库和 Caddy fragment 仅保留为回滚材料。`scripts/deploy-backend-gcp.sh` 默认拒绝执行；只有明确回滚时设置 `ALLOW_LEGACY_GCE_DEPLOY=1`。
 
 公共棋谱抓取与 Pikafish 批量评分只在本机执行，产出 `backend/qipu-dataset.db`。生产机不得运行 `qipu-worker`；后续生产后端只同步已经生成并校验过的 dataset。
 

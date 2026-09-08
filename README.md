@@ -20,5 +20,7 @@ make test
 - 引擎：`CHESS_ENGINE=stockfish`
 - 引擎路径：`STOCKFISH_PATH` 或 `CHESS_ENGINE_PATH`
 - 数据库：`DB_PATH`
+- 后端运行机：`songyy-pi`，systemd `chess.service`，`127.0.0.1:8102`
+- 公网入口：Cloudflare Tunnel `integ-pi` → `https://chess-api.integ.life`
 
-GitHub Pages 的 `CNAME`、PWA manifest、同域 API、CORS、Caddy 与 systemd 模板均已按新域名独立配置。
+使用 `make deploy-backend` 发布 ARM64 后端到 Pi。旧 GCE 路径仅保留用于显式回滚，不再是默认生产目标。

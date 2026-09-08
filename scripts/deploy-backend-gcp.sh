@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+if [[ "${ALLOW_LEGACY_GCE_DEPLOY:-}" != "1" ]]; then
+  echo "Legacy GCE deployment is retired; use scripts/deploy-backend-pi.sh." >&2
+  echo "Set ALLOW_LEGACY_GCE_DEPLOY=1 only for an intentional rollback." >&2
+  exit 1
+fi
+
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 INSTANCE="${GCE_INSTANCE:-integ-prod}"
 ZONE="${GCE_ZONE:-asia-southeast1-b}"
