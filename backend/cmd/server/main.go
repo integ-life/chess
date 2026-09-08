@@ -26,6 +26,7 @@ var (
 
 func main() {
 	port := cmp.Or(os.Getenv("PORT"), "8080")
+	listenHost := cmp.Or(os.Getenv("LISTEN_HOST"), "127.0.0.1")
 	engineConfig := engine.ConfigFromEnv()
 
 	if abs, err := os.Getwd(); err == nil {
@@ -67,7 +68,7 @@ func main() {
 		}()
 	}
 	srv := &http.Server{
-		Addr:              ":" + port,
+		Addr:              listenHost + ":" + port,
 		ReadHeaderTimeout: 10 * time.Second,
 		IdleTimeout:       2 * time.Minute,
 		Handler:           handler,
@@ -81,7 +82,7 @@ func main() {
 		_ = srv.Close()
 	}()
 
-	log.Printf("server: listening on :%s, version=%s, build_time=%s, commit=%s", port, version, buildTime, commit)
+	log.Printf("server: listening on %s:%s, version=%s, build_time=%s, commit=%s", listenHost, port, version, buildTime, commit)
 	fmt.Printf("server build info: version=%s build_time=%s commit=%s\n", version, buildTime, commit)
 	if err := srv.ListenAndServe(); err != http.ErrServerClosed {
 		log.Fatal(err)

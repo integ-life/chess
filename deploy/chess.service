@@ -9,6 +9,7 @@ User=chess
 Group=chess
 WorkingDirectory=/var/lib/chess
 Environment=PORT=8102
+Environment=LISTEN_HOST=127.0.0.1
 Environment=DB_PATH=/var/lib/chess/app.db
 Environment=REQUEST_LOG_PATH=/var/lib/chess/request-response.log
 Environment=CHESS_ENGINE=stockfish
