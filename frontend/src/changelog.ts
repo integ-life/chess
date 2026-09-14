@@ -14,6 +14,7 @@ export const appBuild = {
 }
 
 export const changelog: ChangelogEntry[] = [
+  { version: '2026.09.14-analytics', date: '2026-09-14', title: 'Private page analytics', changes: ['Add independent production page counts without game identifiers, URL parameters or player content.'] },
   { version: '2026.09.08-pi-backend', date: '2026-09-08', title: '后端迁移到 Raspberry Pi', changes: ['国际象棋 API 已迁移到家庭 Raspberry Pi，通过加密 Tunnel 访问仅监听本机的服务，并保留原 GCE 数据作为回滚备份。'] },
   { version: '2026.09.07-direct-api', date: '2026-09-07', title: '服务连接优化', changes: ['页面直接连接专用 API 服务，减少转发依赖。'] },
   {

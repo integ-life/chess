@@ -13,6 +13,7 @@ import { consumeUnifiedLoginCallback } from './auth'
 import { MetricsErrorBoundary } from '@integ-life/metrics-web/react'
 import { telemetry } from './telemetry'
 import { I18nProvider } from './i18n'
+import { startAnalytics } from './analytics'
 declare const __SW_VERSION__: string
 declare const __APP_VERSION__: string
 
@@ -105,6 +106,7 @@ function registerAppServiceWorker() {
 }
 
 consumeUnifiedLoginCallback()
+startAnalytics()
 registerAppServiceWorker()
 
 const router = createHashRouter([

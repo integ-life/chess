@@ -30,3 +30,11 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+## Google Analytics
+
+Production uses the independent **Integ Chess** Web stream `G-KD083M4PHC`.
+The tag is limited to the top-level `chess.integ.life` origin. Hash routes
+are counted once per navigation, game IDs become `/games/:id`, and queries,
+referrers, player names, saved games and annotations are excluded. Enhanced
+measurement, ad personalization and Google signals are disabled.
