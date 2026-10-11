@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import { execFileSync } from 'node:child_process'
+import { readFileSync } from 'node:fs'
 
 const base = '/'
 const swVersion = process.env.SW_VERSION ?? new Date().toISOString().replace(/[-:.TZ]/g, '')
@@ -41,6 +42,7 @@ export default defineConfig({
             commit: buildCommit,
             builtAt: buildTime,
             dirty: buildDirty,
+            uiVersion: JSON.parse(readFileSync(new URL('./node_modules/@integ-life/ui/package.json', import.meta.url), 'utf8')).version,
           }, null, 2)}\n`,
         })
       },

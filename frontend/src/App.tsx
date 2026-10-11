@@ -1,3 +1,4 @@
+import { FamilyBar } from "@integ-life/ui";
 import { useEffect, useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { initSync, syncNow, useSyncStore } from './offline/syncQueue'
@@ -44,7 +45,7 @@ function BoardThemePicker() {
 }
 
 export default function App() {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
   const theme = useBoardThemeStore((state) => state.theme)
   const { online, syncing } = useSyncStore()
   const { ready, user } = useAuthStore()
@@ -57,6 +58,7 @@ export default function App() {
 
   useEffect(() => {
     document.documentElement.dataset.boardTheme = theme
+    document.documentElement.dataset.integTheme = theme === 'classic' ? 'light' : 'dark'
   }, [theme])
 
   useEffect(() => {
@@ -102,10 +104,8 @@ export default function App() {
 
   if (!user) {
     return (
-      <div className={`app-shell app-shell--${theme} min-h-screen px-4 py-6`}>
-        <div className="app-login-theme">
-          <BoardThemePicker /> <LanguagePicker />
-        </div>
+      <div className={`app-shell app-shell--${theme} min-h-screen`}>
+        <FamilyBar product="chess" name="Chess" homeHref="#/" locale={locale} languageControl={<LanguagePicker />} appearanceControl={<BoardThemePicker />} />
         <LoginPage />
       </div>
     )
@@ -113,12 +113,10 @@ export default function App() {
 
   return (
     <div className={`app-shell app-shell--${theme} min-h-screen`}>
+      <div className="shared-chess-header">
+      <FamilyBar product="chess" name="Chess" homeHref="#/" locale={locale} languageControl={<LanguagePicker />} appearanceControl={<BoardThemePicker />} account={{name:user.username, signOutLabel:t('logout'), onSignOut:() => void logout()}} />
       <header className="app-header border-b border-amber-200 bg-amber-100">
         <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-3 px-4 py-3">
-          <div className="flex items-center gap-2">
-            <img alt="" className="h-9 w-9 rounded-lg shadow-sm" src="/favicon.svg" />
-            <h1 className="app-brand text-lg font-bold text-amber-900">{t('appName')}</h1>
-          </div>
           <nav className="flex gap-1">
             <NavLink to="/" className={navClass} end>
               {t('library')}
@@ -136,8 +134,6 @@ export default function App() {
               {t('updates')}
             </NavLink>
           </nav>
-          <BoardThemePicker />
-          <LanguagePicker />
           {installPrompt && (
             <button
               className="min-h-11 rounded-md bg-amber-700 px-3 py-1.5 text-sm font-medium text-white transition-transform duration-150 ease-out hover:bg-amber-800 active:scale-[0.96]"
@@ -147,7 +143,6 @@ export default function App() {
               {t('install')}
             </button>
           )}
-          <span className="ml-auto text-xs font-medium text-amber-900">{user.username}</span>
           <span
             className={`flex items-center gap-1.5 text-xs ${
               online ? 'text-green-700' : 'text-gray-500'
@@ -160,15 +155,10 @@ export default function App() {
             />
             {syncing ? t('syncing') : online ? t('online') : t('offline')}
           </span>
-          <button
-            className="min-h-11 rounded-md px-3 py-1 text-xs font-medium text-amber-900 transition-transform duration-150 ease-out hover:bg-amber-200 active:scale-[0.96]"
-            onClick={() => void logout()}
-            type="button"
-          >
-            {t('logout')}
-          </button>
+
         </div>
       </header>
+      </div>
       {showChangelogNotice && (
         <div className="app-changelog-notice border-b border-amber-200 bg-white">
           <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-3 px-4 py-2 text-sm">

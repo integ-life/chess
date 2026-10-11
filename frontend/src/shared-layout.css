@@ -1,0 +1,6 @@
+.shared-chess-header .app-header nav { display:flex; flex-wrap:wrap; }
+.il-family-bar .board-theme-picker { margin:0; color:var(--il-text); }
+.il-family-bar .board-theme-picker__label { color:var(--il-muted); }
+.il-dialog .il-product-copy { line-height:1.5; }
+.app-shell > .il-family-bar + * { margin-top:24px; }
+@media(max-width:640px) { .il-family-bar .board-theme-picker__label { display:none; } .il-family-bar .il-bar-actions { justify-content:flex-start; } }
