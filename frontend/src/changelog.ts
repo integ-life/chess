@@ -14,6 +14,7 @@ export const appBuild = {
 }
 
 export const changelog: ChangelogEntry[] = [
+  { version: "2026.10.11-compact-navigation", date: "2026-10-11", title: "Compact navigation", changes: ["Use the product logo to switch apps and icon controls for language, board appearance and account. Keep descriptions in the product menu."] },
   { version: "2026.10.11-shared-layout", date: "2026-10-11", title: "Shared Integ.Life navigation", changes: ["Add the family header and categorized app switcher with product logos and descriptions. Preserve board themes, course navigation, offline sync and game controls."] },
   { version: '2026.09.14-analytics', date: '2026-09-14', title: 'Private page analytics', changes: ['Add independent production page counts without game identifiers, URL parameters or player content.'] },
   { version: '2026.09.08-pi-backend', date: '2026-09-08', title: '后端迁移到 Raspberry Pi', changes: ['国际象棋 API 已迁移到家庭 Raspberry Pi，通过加密 Tunnel 访问仅监听本机的服务，并保留原 GCE 数据作为回滚备份。'] },

@@ -15,7 +15,7 @@ describe('shared family header', () => {
   it('keeps product switching and board appearance available before sign-in', () => {
     auth.user = null
     const html = renderShell()
-    expect(html).toContain('data-ui-version="0.4.0"')
+    expect(html).toContain('data-ui-version="0.5.0"')
     expect(html).toContain('https://context.integ.life/')
     expect(html).toContain('board-theme-picker__select')
     expect(html).not.toContain('class="il-appearance"')
