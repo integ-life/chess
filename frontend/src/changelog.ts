@@ -14,6 +14,7 @@ export const appBuild = {
 }
 
 export const changelog: ChangelogEntry[] = [
+  { version: "2026.10.12-sharing", date: "2026-10-12", title: "Sharing previews", changes: ["Add a product summary and branded image for search and link sharing."] },
   { version: "2026.10.11-compact-navigation", date: "2026-10-11", title: "Compact navigation", changes: ["Use the product logo to switch apps and icon controls for language, board appearance and account. Keep descriptions in the product menu."] },
   { version: "2026.10.11-shared-layout", date: "2026-10-11", title: "Shared Integ.Life navigation", changes: ["Add the family header and categorized app switcher with product logos and descriptions. Preserve board themes, course navigation, offline sync and game controls."] },
   { version: '2026.09.14-analytics', date: '2026-09-14', title: 'Private page analytics', changes: ['Add independent production page counts without game identifiers, URL parameters or player content.'] },
