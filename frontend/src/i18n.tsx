@@ -66,7 +66,8 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   }), [locale])
   useEffect(() => {
     document.documentElement.lang = locale
-    document.title = locale === 'zh-CN' ? zh.appName : translations[locale].appName
+    const localizedName = locale === 'zh-CN' ? zh.appName : translations[locale].appName
+    document.title = locale === 'en' ? 'Chess — Integ.Life' : `Chess · ${localizedName} — Integ.Life`
   }, [locale])
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>
 }
