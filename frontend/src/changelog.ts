@@ -14,6 +14,7 @@ export const appBuild = {
 }
 
 export const changelog: ChangelogEntry[] = [
+  { version: "2026.10.13-theme-translations", date: "2026-10-13", title: "Theme translations", changes: ["Show theme names and descriptions in the selected interface language."] },
   { version: "2026.10.12-chat-name", date: "2026-10-12", title: "Integ-Chat product name", changes: ["Use the official Integ-Chat name in the shared product switcher."] },
   { version: "2026.10.12-page-title", date: "2026-10-12", title: "Recognizable page titles", changes: ["Keep the product name and Integ.Life brand in browser tabs across languages."] },
   { version: "2026.10.12-sharing", date: "2026-10-12", title: "Sharing previews", changes: ["Add a product summary and branded image for search and link sharing."] },

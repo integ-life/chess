@@ -8,6 +8,7 @@ import { latestChangelog } from './changelog'
 import { BOARD_THEMES, useBoardThemeStore } from './stores/boardThemeStore'
 import type { BoardTheme } from './stores/boardThemeStore'
 import { LanguagePicker, useI18n } from './i18n'
+import { boardThemeTranslations } from './boardThemeTranslations'
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>
@@ -20,13 +21,13 @@ const navClass = ({ isActive }: { isActive: boolean }) =>
   }`
 
 function BoardThemePicker() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const theme = useBoardThemeStore((state) => state.theme)
   const setTheme = useBoardThemeStore((state) => state.setTheme)
   const current = BOARD_THEMES.find((item) => item.id === theme) ?? BOARD_THEMES[0]
 
   return (
-    <label className="board-theme-picker" title={current.description}>
+    <label className="board-theme-picker" title={boardThemeTranslations[locale][current.id].description}>
       <span className="board-theme-picker__label">{t('theme')}</span>
       <select
         aria-label={t('themeAria')}
@@ -35,8 +36,8 @@ function BoardThemePicker() {
         value={theme}
       >
         {BOARD_THEMES.map((item) => (
-          <option key={item.id} value={item.id}>
-            {item.name}
+          <option key={item.id} value={item.id} title={boardThemeTranslations[locale][item.id].description}>
+            {boardThemeTranslations[locale][item.id].name}
           </option>
         ))}
       </select>
