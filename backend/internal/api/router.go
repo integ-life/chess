@@ -129,26 +129,6 @@ func corsMiddleware(next http.Handler) http.Handler {
 	})
 }
 
-func allowedOrigin(origin string, allowed []string) bool {
-	origin = normalizeOrigin(origin)
-	if origin == "" {
-		return false
-	}
-	for _, v := range allowed {
-		v = normalizeOrigin(v)
-		if v == "*" {
-			return true
-		}
-		if origin == v {
-			return true
-		}
-		if strings.HasPrefix(v, "*.") && strings.HasSuffix(origin, strings.TrimPrefix(v, "*.")) {
-			return true
-		}
-	}
-	return false
-}
-
 func chooseAllowOrigin(origin string, allowed []string) string {
 	normOrigin := normalizeOrigin(origin)
 	if normOrigin == "" {
