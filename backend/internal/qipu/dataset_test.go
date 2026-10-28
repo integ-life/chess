@@ -22,7 +22,7 @@ func TestDatasetDeduplicatesGamesPrefixesAndTranspositions(t *testing.T) {
 
 	first := Record{
 		SourceID: "a", SourceKey: "game-1", SourceVersion: "1", Title: "A",
-		InitialFEN: chess.StartFEN, Moves: []string{"c3c4", "c6c5", "g3g4", "g6g5"}, Result: "1-0",
+		InitialFEN: chess.StartFEN, Moves: []string{"g1f3", "g8f6", "b1c3", "b8c6"}, Result: "1-0",
 	}
 	first.SetID()
 	if err := dataset.Ingest(first); err != nil {
@@ -35,7 +35,7 @@ func TestDatasetDeduplicatesGamesPrefixesAndTranspositions(t *testing.T) {
 	}
 	transpose := Record{
 		SourceID: "c", SourceKey: "game-2", SourceVersion: "1", Title: "B",
-		InitialFEN: chess.StartFEN, Moves: []string{"g3g4", "g6g5", "c3c4", "c6c5"}, Result: "0-1",
+		InitialFEN: chess.StartFEN, Moves: []string{"b1c3", "b8c6", "g1f3", "g8f6"}, Result: "0-1",
 	}
 	transpose.SetID()
 	if err := dataset.Ingest(transpose); err != nil {
@@ -50,11 +50,11 @@ func TestDatasetDeduplicatesGamesPrefixesAndTranspositions(t *testing.T) {
 		t.Fatalf("unexpected dedupe stats: %+v", stats)
 	}
 	positions, _ := replay(first)
-	want := engine.Evaluation{ScoreCP: 42, BestMove: "a0a1"}
-	if err := dataset.SavePositionEvaluation(positions[len(positions)-1].FEN(), "Pikafish", 8, want); err != nil {
+	want := engine.Evaluation{ScoreCP: 42, BestMove: "e2e4"}
+	if err := dataset.SavePositionEvaluation(positions[len(positions)-1].FEN(), "Stockfish", 8, want); err != nil {
 		t.Fatal(err)
 	}
-	got, ok, err := dataset.PositionEvaluation(positions[len(positions)-1].FEN(), "Pikafish", 8)
+	got, ok, err := dataset.PositionEvaluation(positions[len(positions)-1].FEN(), "Stockfish", 8)
 	if err != nil || !ok || got != want {
 		t.Fatalf("cached evaluation = %+v, %v, %v", got, ok, err)
 	}

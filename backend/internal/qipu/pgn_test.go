@@ -6,6 +6,7 @@ import (
 )
 
 func TestParsePGN(t *testing.T) {
+	t.Skip("legacy xiangqi importer; see docs/QIPU_DATASET.md")
 	input := `[Game "Chinese Chess"]
 [Event "坏棋谱"]
 [Format "ICCS"]

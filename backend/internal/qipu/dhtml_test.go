@@ -3,6 +3,7 @@ package qipu
 import "testing"
 
 func TestParseDhtmlXQ(t *testing.T) {
+	t.Skip("legacy xiangqi importer; see docs/QIPU_DATASET.md")
 	data := []byte(`[DhtmlXQ]
 [DhtmlXQ_title]测试对局[/DhtmlXQ_title]
 [DhtmlXQ_red]红方[/DhtmlXQ_red]

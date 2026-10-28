@@ -16,8 +16,8 @@ func TestSampleIndices(t *testing.T) {
 
 func TestTerminalEvaluation(t *testing.T) {
 	for _, fen := range []string{
-		"R3k4/1R7/9/9/9/9/9/9/9/4K4 b - - 0 1",
-		"3k5/4R4/9/9/9/9/9/9/9/4K4 b - - 0 1",
+		"7k/6Q1/5K2/8/8/8/8/8 b - - 0 1",
+		"R5k1/8/6K1/8/8/8/8/8 b - - 0 1",
 	} {
 		got, terminal, err := terminalEvaluation(fen)
 		if err != nil || !terminal || got.Mate != 1 || got.BestMove != "" {
