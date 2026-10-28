@@ -57,3 +57,36 @@ func TestPruneFinishedMatches(t *testing.T) {
 		t.Fatal("active match must be kept")
 	}
 }
+
+func TestTickDoesNotPersistUnlessFinished(t *testing.T) {
+	s, _ := testServerAndToken(t)
+	pos, _ := chess.ParseFEN(chess.StartFEN)
+	start := time.Now().Add(-time.Minute)
+	m := &onlineMatch{
+		ID: "tick-1", Status: "active", OpponentType: "human", InitialFEN: chess.StartFEN, Position: pos,
+		Moves: []string{}, Red: onlinePlayer{UserID: 1, Username: "w", Color: chess.Red},
+		Black: onlinePlayer{UserID: 2, Username: "b", Color: chess.Black}, RedTimeMs: 600000, BlackTimeMs: 600000,
+		LastTick: start, CreatedAt: start, UpdatedAt: start,
+	}
+	hub := newOnlineHub()
+	hub.matches[m.ID] = m
+	hub.persistOnlineStateLocked(m, s)
+	before, err := s.Store.OnlineMatchByID(m.ID)
+	if err != nil || before == nil {
+		t.Fatalf("seed record missing: %v", err)
+	}
+	for i := 1; i <= 3; i++ {
+		hub.tickLocked(m, start.Add(time.Duration(i)*time.Second), s)
+	}
+	after, _ := s.Store.OnlineMatchByID(m.ID)
+	if after == nil || after.UpdatedAt != before.UpdatedAt || after.Payload != before.Payload {
+		t.Fatalf("tick wrote to the database: before=%+v after=%+v", before, after)
+	}
+	hub.tickLocked(m, start.Add(time.Hour), s)
+	if m.Status != "finished" || m.ResultReason != "timeout" {
+		t.Fatalf("expected timeout finish, got %+v", m)
+	}
+	if gone, _ := s.Store.OnlineMatchByID(m.ID); gone != nil {
+		t.Fatal("finished match should be removed from online_matches")
+	}
+}

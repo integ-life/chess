@@ -542,8 +542,8 @@ func (hub *onlineHub) tickLocked(m *onlineMatch, now time.Time, s *Server) {
 			delete(hub.rooms, m.RoomCode)
 		}
 		hub.persistMatchLocked(m, s)
+		hub.persistOnlineStateLocked(m, s)
 	}
-	hub.persistOnlineStateLocked(m, s)
 }
 
 func (hub *onlineHub) applyMoveLocked(m *onlineMatch, move chess.Move, s *Server) {
