@@ -190,7 +190,7 @@ export const mateLessons: MateLesson[] = [
     quiz: mateExercises['bold-heart'],
   },
   {
-    id: 'stalemate', title: '困毙', summary: '不一定将军；只要轮到对方且没有任何合法着，对方同样判负。',
+    id: 'stalemate', title: '困毙', summary: '逼和：轮到对方、未被将军且无合法着，判和。',
     reviewPrompts: mateReviewExercises.stalemate,
     transferNote: '“困毙之三”的关键仍是安静控制，而不是继续将军。迁移后必须重新检查守方每一枚棋子：将帅当前不受攻击，同时车马炮士象兵全部没有合法着，才能由规则判为困毙。',
     defenseNote: '防守方要在封锁完成前保存至少一枚棋子的合法着，例如提前移兵、腾士象、换马位或用将军迫使对方回应；也可交换控制关键点的棋子。不能只检查将帅，任何一枚子仍能合法移动都足以避免立即困毙。',

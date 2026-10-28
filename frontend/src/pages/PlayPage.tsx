@@ -129,6 +129,9 @@ function matchWinnerColor(match: OnlineMatch): 'r' | 'b' | null {
 }
 
 function onlineResultText(match: OnlineMatch, localStatus: ReturnType<typeof gameStatus>, fallbackWinner: string) {
+  if (match.result === '1/2-1/2' || match.resultReason === 'stalemate' || (!match.resultReason && localStatus === 'stalemate')) {
+    return '和棋（逼和）'
+  }
   const winner = matchWinnerColor(match)
   const winnerText = winner ? `${COLOR_NAME[winner]}胜` : `${fallbackWinner}胜`
   if (match.resultReason === 'resign') {
@@ -138,8 +141,7 @@ function onlineResultText(match: OnlineMatch, localStatus: ReturnType<typeof gam
   }
   if (match.resultReason === 'timeout') return `${winnerText}（超时）`
   if (match.resultReason === 'checkmate') return `${winnerText}（将死）`
-  if (match.resultReason === 'stalemate') return `${winnerText}（困毙）`
-  return `${winnerText}（${localStatus === 'checkmate' ? '将死' : '困毙'}）`
+  return `${winnerText}（将死）`
 }
 
 async function notifyOpponentResigned(match: OnlineMatch) {

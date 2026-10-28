@@ -539,9 +539,12 @@ func (hub *onlineHub) applyMoveLocked(m *onlineMatch, move chess.Move, s *Server
 		if m.RoomCode != "" {
 			delete(hub.rooms, m.RoomCode)
 		}
-		if m.Position.Turn == chess.Black {
+		switch {
+		case m.ResultReason == "stalemate":
+			m.Result = "1/2-1/2"
+		case m.Position.Turn == chess.Black:
 			m.Result = "1-0"
-		} else {
+		default:
 			m.Result = "0-1"
 		}
 	}

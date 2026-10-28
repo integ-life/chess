@@ -76,6 +76,7 @@ function playersForConfig(config: PlayConfig) {
 function gameResultFromPosition(pos: Position): string {
   const status = gameStatus(pos)
   if (status === 'ongoing') return '*'
+  if (status === 'stalemate') return '1/2-1/2'
   return pos.turn === 'b' ? '1-0' : '0-1'
 }
 
