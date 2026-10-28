@@ -34,3 +34,26 @@ func TestStalemateIsDrawnOnlineMatch(t *testing.T) {
 		t.Fatalf("stalemate must be a finished draw: %+v", m)
 	}
 }
+
+func TestPruneFinishedMatches(t *testing.T) {
+	now := time.Now()
+	hub := newOnlineHub()
+	hub.matches["old"] = &onlineMatch{ID: "old", Status: "finished", RoomCode: "AAAA", UpdatedAt: now.Add(-11 * time.Minute)}
+	hub.rooms["AAAA"] = hub.matches["old"]
+	hub.matches["recent"] = &onlineMatch{ID: "recent", Status: "finished", UpdatedAt: now.Add(-time.Minute)}
+	hub.matches["active"] = &onlineMatch{ID: "active", Status: "active", UpdatedAt: now.Add(-time.Hour)}
+
+	hub.pruneFinishedLocked(now)
+	if _, ok := hub.matches["old"]; ok {
+		t.Fatal("old finished match should be pruned")
+	}
+	if hub.rooms["AAAA"] != nil {
+		t.Fatal("room entry for pruned match should be removed")
+	}
+	if _, ok := hub.matches["recent"]; !ok {
+		t.Fatal("recently finished match must be kept")
+	}
+	if _, ok := hub.matches["active"]; !ok {
+		t.Fatal("active match must be kept")
+	}
+}

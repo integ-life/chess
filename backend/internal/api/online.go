@@ -27,7 +27,14 @@ type onlineHub struct {
 	waiting *onlineMatch
 	matches map[string]*onlineMatch
 	rooms   map[string]*onlineMatch
+
+	nextPrune time.Time
 }
+
+const (
+	finishedMatchRetention = 10 * time.Minute
+	pruneInterval          = time.Minute
+)
 
 type onlinePlayer struct {
 	UserID   int64         `json:"-"`
@@ -427,7 +434,30 @@ func (s *Server) onlineMatchForRequest(w http.ResponseWriter, r *http.Request, u
 	return m, true
 }
 
+// pruneFinishedLocked drops finished matches from memory once clients have had
+// time to read the final state. Finished matches are already removed from the
+// database, so this only reclaims memory. It runs at most once per pruneInterval.
+func (hub *onlineHub) pruneFinishedLocked(now time.Time) {
+	if now.Before(hub.nextPrune) {
+		return
+	}
+	hub.nextPrune = now.Add(pruneInterval)
+	for id, m := range hub.matches {
+		if m.Status != "finished" || now.Sub(m.UpdatedAt) <= finishedMatchRetention {
+			continue
+		}
+		if hub.waiting == m {
+			hub.waiting = nil
+		}
+		if m.RoomCode != "" && hub.rooms[m.RoomCode] == m {
+			delete(hub.rooms, m.RoomCode)
+		}
+		delete(hub.matches, id)
+	}
+}
+
 func (hub *onlineHub) expireWaitingLocked(now time.Time, s *Server) {
+	hub.pruneFinishedLocked(now)
 	if hub.waiting == nil || now.Before(hub.waiting.WaitingUntil) {
 		return
 	}
